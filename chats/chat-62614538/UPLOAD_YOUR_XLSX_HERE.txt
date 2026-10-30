@@ -1,0 +1,14 @@
+============================================================
+UPLOAD LOCATION FOR THE WORKBOOK
+============================================================
+Upload your Excel file in this chat and it will land in this
+workspace folder:
+
+  /opt/render/project/src/agent_workspace/chats/chat-62614538/chats/chat-62614538
+
+Target filename: OSP_Telecom_Leads_NetNew (3).xlsx
+
+Once the file appears here, the manual ICP audit of every
+prospect website will start immediately and fill all 13
+evaluation fields per the column spec.
+============================================================
