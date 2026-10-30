@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head><meta charset='utf-8'><title>Circle Locus — Full Screen Interactive</title>
+<script src='https://cdn.plot.ly/plotly-2.32.0.min.js'></script>
+<style>html,body,#g{width:100%;height:100%;margin:0;background:#fff}</style>
+</head><body><div id='g'></div>
+<script>
+var N=721, t=[], x=[], y=[];
+for(var i=0;i<=N;i++){var a=2*Math.PI*i/N;t.push(a);x.push(50*Math.cos(a));y.push(50*Math.sin(a));}
+var trace={x:x,y:y,mode:'lines',line:{color:'#2563eb',width:5},name:'Locus'};
+var dot={x:[50],y:[0],mode:'markers',marker:{size:18,color:'#dc2626'},name:'moving point'};
+var center={x:[0],y:[0],mode:'markers',marker:{size:14,color:'#111827'},name:'origin (0,0)'};
+var layout={title:{text:'Locus: x² + y² = 2500 — r=50 units, v=50 units/h, one lap = 6.28 h',font:{size:28}},
+ xaxis:{range:[-60,60],title:'X (units)',zeroline:true},yaxis:{range:[-60,60],title:'Y (units)',zeroline:true,scaleanchor:'x',scaleratio:1},
+ showlegend:true,font:{size:18},hovermode:'closest'};
+Plotly.newPlot('g',[trace,center,dot],layout,{responsive:true});
+var f=0;
+setInterval(function(){f=(f+2)%N;
+ Plotly.restyle('g',{'x':[[x[f]]],'y':[[y[f]]]},[2]);},30);
+</script></body></html>
