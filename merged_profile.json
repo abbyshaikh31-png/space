@@ -1,0 +1,17 @@
+{
+  "id": "USR_992",
+  "name": "Alvin Finch",
+  "email": "alvin.f@techcorp.io",
+  "aliases": [
+    "alvin.finch@gmail.com"
+  ],
+  "role": "Lead Architect",
+  "clearance_level": 4,
+  "last_active": "2026-10-28",
+  "projects": [
+    "Alpha",
+    "Beta",
+    "Delta",
+    "Gamma"
+  ]
+}
