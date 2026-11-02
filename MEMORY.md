@@ -1,0 +1,1 @@
+- User: TS Inter 2nd Year student (Telangana), learning Maths 2A Chapter 9 Probability step-by-step, wants small part-by-part lessons. Sources: tsboardsolutions.in Ch-9 Ex 9(a), 9(b), 9(c). Plan: Part1=Ex9a basics, Part2=9b addition theorem/sample spaces, Part3=9c independence/conditional. Language: simple English, casual tone.
