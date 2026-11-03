@@ -1,0 +1,39 @@
+{
+  "query": "pydantic v2 tutorial",
+  "backend": "bing-html",
+  "latency_s": 0.25,
+  "count": 5,
+  "fetched_at": "2026-11-03T14:44:50.934988+00:00",
+  "results": [
+    {
+      "title": "Pydantic Validation | Pydantic Docs",
+      "url": "https://www.bing.com/ck/a?!&&p=5c1ef3e4e7687299d5416c80cdaef462a38462bf640bb4eb40d099a8979e2ceaJmltdHM9MTc5MzY2NDAwMA&ptn=3&ver=2&hsh=4&fclid=1356dda6-7538-6bd5-2260-c5a074e66aeb&u=a1aHR0cHM6Ly9weWRhbnRpYy5kZXYvZG9jcy92YWxpZGF0aW9uL2xhdGVzdC9nZXQtc3RhcnRlZC8&ntb=1",
+      "snippet": "Pydantic is the most widely used data validation library for Python. Fast and extensible, Pydantic plays nicely with your …",
+      "backend": "bing-html"
+    },
+    {
+      "title": "Introduction to Python Pydantic Library - GeeksforGeeks",
+      "url": "https://www.bing.com/ck/a?!&&p=7b7b56c5058cc40fe51845cfe5b32e4b5d162b78454a367c68e401a021952750JmltdHM9MTc5MzY2NDAwMA&ptn=3&ver=2&hsh=4&fclid=1356dda6-7538-6bd5-2260-c5a074e66aeb&u=a1aHR0cHM6Ly93d3cuZ2Vla3Nmb3JnZWVrcy5vcmcvcHl0aG9uL2ludHJvZHVjdGlvbi10by1weXRob24tcHlkYW50aWMtbGlicmFyeS8&ntb=1",
+      "snippet": "Oct 24, 2025  · The Pydantic library in Python is used for data validation and data parsing using Python type hints. It ensures that …",
+      "backend": "bing-html"
+    },
+    {
+      "title": "pydantic · PyPI",
+      "url": "https://www.bing.com/ck/a?!&&p=2b5029b64aae74c05f712ee13f7ff670f9fb2942f9a6726005db3dd93d480055JmltdHM9MTc5MzY2NDAwMA&ptn=3&ver=2&hsh=4&fclid=1356dda6-7538-6bd5-2260-c5a074e66aeb&u=a1aHR0cHM6Ly9weXBpLm9yZy9wcm9qZWN0L3B5ZGFudGljLw&ntb=1",
+      "snippet": "May 4, 2017  · Pydantic v2.11 is a version strongly focused on build time performance of Pydantic models (and core schema …",
+      "backend": "bing-html"
+    },
+    {
+      "title": "Pydantic Docs - Validation, AI Agents, Logfire Observability",
+      "url": "https://www.bing.com/ck/a?!&&p=154f467f7e2d39437b7a92bdd29292aabf4a90580d5f4fdc8e5220cffcbe9a70JmltdHM9MTc5MzY2NDAwMA&ptn=3&ver=2&hsh=4&fclid=1356dda6-7538-6bd5-2260-c5a074e66aeb&u=a1aHR0cHM6Ly9weWRhbnRpYy5kZXYvZG9jcy8&ntb=1",
+      "snippet": "Validate untrusted data and build agents you’ll actually ship to production using our Python libraries. Observe, govern, and optimize …",
+      "backend": "bing-html"
+    },
+    {
+      "title": "GitHub - pydantic/pydantic: Data validation using Python type hints",
+      "url": "https://www.bing.com/ck/a?!&&p=bdcb0dec3f871bec2fa34c89d1aaa805371da47cf6014eca6aec26d56ddd6bccJmltdHM9MTc5MzY2NDAwMA&ptn=3&ver=2&hsh=4&fclid=1356dda6-7538-6bd5-2260-c5a074e66aeb&u=a1aHR0cHM6Ly9naXRodWIuY29tL3B5ZGFudGljL3B5ZGFudGlj&ntb=1",
+      "snippet": "Jun 4, 2017  · Pydantic Validation Data validation using Python type hints. Fast and extensible, Pydantic plays nicely with your …",
+      "backend": "bing-html"
+    }
+  ]
+}
