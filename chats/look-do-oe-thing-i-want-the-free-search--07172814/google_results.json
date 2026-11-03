@@ -1,1 +1,77 @@
-[]
+{
+  "query": "artificial intelligence",
+  "count": 10,
+  "fetched_at": "2026-11-03T13:50:16Z",
+  "results": [
+    {
+      "title": "Artificial intelligence",
+      "link": "https://dl.acm.org/doi/abs/10.5555/993568",
+      "snippet": "…Artificialintelligence…Machinelearning…Artificialintelligence(AI) is the Science andEngineering domain concerned with the theory and practice of developing systems that …",
+      "source": "WP Henry, PH Winston - 2004 - dl.acm.org",
+      "engine": "google_scholar"
+    },
+    {
+      "title": "Quo vadis artificial intelligence ?",
+      "link": "https://link.springer.com/article/10.1007/s44163-022-00022-8",
+      "snippet": "… onArtificialIntelligence[2]. He is therefore considered to be the father ofartificialintelligence.… many remarkable achievements, includingmachinelearning, theorem proving, pattern …",
+      "source": "Y Jiang,X Li,H Luo,S Yin,O Kaynak- DiscoverArtificial Intelligence, 2022 - Springer",
+      "engine": "google_scholar"
+    },
+    {
+      "title": "Introduction to artificial intelligence",
+      "link": "https://books.google.com/books?hl=en&lr=&id=HACaS635bYcC&oi=fnd&pg=PA1&dq=artificial+intelligence&ots=Kn8xsQVJ_S&sig=K-difQb31kOjTevIxI_4oZ5PXEM",
+      "snippet": "… from a text onArtificialIntelligence(from now on “AI”). … to this book with no idea of whatArtificialIntelligence(AI) is, or what it … What would the world be like if we hadintelligentmachines? …",
+      "source": "E Charniak - 1985 - books.google.com",
+      "engine": "google_scholar"
+    },
+    {
+      "title": "The handbook of artificial intelligence",
+      "link": "https://www.sciencedirect.com/book/9780865760905/the-handbook-of-artificial-intelligence",
+      "snippet": "… This chapter discusses howartificialintelligence(AI) techniques have been applied inresearch attempting to createintelligentcomputer-based tutors. The first instructional programs …",
+      "source": "A Barr, EA Feigenbaum,PR Cohen- 1981 - Elsevier",
+      "engine": "google_scholar"
+    },
+    {
+      "title": "Introduction to artificial intelligence",
+      "link": "https://www.academia.edu/download/123629463/f7339bab5a0f930e916b603daad5fecaff2c.pdf",
+      "snippet": "… or computer-controlled robot to perform tasks commonly associated withintelligentbeings. …ArtificialIntelligenceis the study of how to make computers do things at which, at the …",
+      "source": "W Ertel, NT Black - 2011 - academia.edu",
+      "engine": "google_scholar"
+    },
+    {
+      "title": "What is artificial intelligence ?",
+      "link": "https://link.springer.com/content/pdf/10.1007/978-94-009-1900-6_1?pdf=chapter+toc",
+      "snippet": "One of the fascinating aspects of the field ofartificialintelligence(AI) is that the precise natureof its subject matter turns out to be surprisingly difficult to define. The problem, of course, …",
+      "source": "JH Fetzer -Artificial intelligence: Its scope and limits, 1990 - Springer",
+      "engine": "google_scholar"
+    },
+    {
+      "title": "Artificial intelligence",
+      "link": "https://books.google.com/books?hl=en&lr=&id=_ixmRlL9jcIC&oi=fnd&pg=PP1&dq=artificial+intelligence&ots=JRSG2NozPW&sig=YfVqbgMH2ItC3Dsvjja7QUdoyko",
+      "snippet": "ArtificialIntelligenceis the study of how to build or program computers to enable them to dowhat minds can do. This volume discusses the ways in which computational ideas and …",
+      "source": "MA Boden - 1996 - books.google.com",
+      "engine": "google_scholar"
+    },
+    {
+      "title": "Introduction to artificial intelligence",
+      "link": "https://books.google.com/books?hl=en&lr=&id=sQegDwAAQBAJ&oi=fnd&pg=PR13&dq=artificial+intelligence&ots=RIQG_xgXPB&sig=WOnpL7QD27WFRP2wSFO986h65sg",
+      "snippet": "…intelligentenough to understandintelligence? One approach to answering this question is“artificialintelligence… Much progress has been made in research onartificialintelligencesince …",
+      "source": "PC Jackson- 2019 - books.google.com",
+      "engine": "google_scholar"
+    },
+    {
+      "title": "Artificial intelligence",
+      "link": "https://www.cs.ubc.ca/~mack/CS322/lectures/1-Intro1.pdf",
+      "snippet": "… Foundations ofartificialintelligence… • We would have to spend most of our effort onstudying how people’s minds operate (eg IQ tests cover very narrow range of ability) • …",
+      "source": "AK Mackworth,DL Poole- 2010 - cs.ubc.ca",
+      "engine": "google_scholar"
+    },
+    {
+      "title": "Managing artificial intelligence",
+      "link": "https://misq.umn.edu/misq/article/45/3/1433/1890",
+      "snippet": "… that actually achievedintelligentbehavior, …artificialintelligencefor having borne and nurturedit. If you could see how it was done, people seemed to think, then it couldn’t beintelligence…",
+      "source": "N Berente,B Gu,J Recker,R Santhanam- MIS quarterly, 2021 - misq.umn.edu",
+      "engine": "google_scholar"
+    }
+  ]
+}
