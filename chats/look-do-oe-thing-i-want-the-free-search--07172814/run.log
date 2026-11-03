@@ -1,2 +1,4 @@
 [harvest] 3000 raw proxies collected
 [validate] 186 working Google proxies
+[save] 0 results -> google_results.json, google_results.csv
+[done] 410.8s total
