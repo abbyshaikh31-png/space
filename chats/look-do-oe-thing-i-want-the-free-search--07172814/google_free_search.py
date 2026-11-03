@@ -13,9 +13,9 @@ from bs4 import BeautifulSoup
 BASE = Path(os.path.dirname(os.path.abspath(__file__)))
 
 # ---------- tunables ----------
-VALIDATE_CONCURRENCY = 400
+VALIDATE_CONCURRENCY = 300
 VALIDATE_TIMEOUT = 8
-SEARCH_TIMEOUT = 12
+SEARCH_TIMEOUT = 10
 MAX_ATTEMPTS = 40
 RESULTS_WANTED = 10
 
