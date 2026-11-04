@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tap the Target</title>
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: system-ui, sans-serif; background: #0f172a; color: #fff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 16px; }
+  h1 { font-size: 1.3rem; color: #38bdf8; margin-bottom: 8px; }
+  #hud { display: flex; gap: 18px; font-size: 1.05rem; margin: 8px 0; flex-wrap: wrap; justify-content: center; }
+  #hud b { color: #fbbf24; }
+  #levels { display: flex; gap: 8px; margin-bottom: 10px; }
+  #levels button { margin: 0; padding: 8px 16px; }
+  #levels .on { background: #fbbf24; }
+  #board { position: relative; width: min(92vw, 420px); height: min(60vh, 380px); background: #1e293b; border-radius: 14px; overflow: hidden; cursor: crosshair; box-shadow: 0 0 20px rgba(56,189,248,.25); }
+  #target { position: absolute; border-radius: 50%; background: radial-gradient(circle at 30% 30%, #f472b6, #be123c); box-shadow: 0 0 14px #f43f5e; cursor: pointer; transition: transform .08s; user-select: none; }
+  #msg { margin-top: 12px; font-size: 1rem; color: #94a3b8; min-height: 1.4em; text-align: center; }
+  #play { background: #38bdf8; border: 0; color: #06283d; font-weight: 700; padding: 10px 22px; border-radius: 9px; font-size: 1rem; cursor: pointer; margin-top: 12px; }
+  #play:hover { background: #7dd3fc; }
+</style>
+</head>
+<body>
+<h1>🎯 Tap the Target</h1>
+<div id="levels">
+  <button data-d="easy" class="on">Easy</button>
+  <button data-d="medium">Medium</button>
+  <button data-d="hard">Hard</button>
+</div>
+<div id="hud"><span>Score: <b id="score">0</b></span><span>Misses: <b id="miss">0</b></span><span>Time: <b id="time">20</b>s</span><span>Best: <b id="best">0</b></span></div>
+<div id="board"><div id="target" hidden></div></div>
+<div id="msg">Pick a level, then press Start!</div>
+<button id="play">Start</button>
+<script>
+const board = document.getElementById('board'), t = document.getElementById('target'),
+      scoreEl = document.getElementById('score'), missEl = document.getElementById('miss'),
+      timeEl = document.getElementById('time'), bestEl = document.getElementById('best'),
+      msg = document.getElementById('msg'), playBtn = document.getElementById('play');
+const DIFF = {
+  easy:   { time: 25, move: 1000, min: 44, max: 64 },
+  medium: { time: 20, move: 800,  min: 32, max: 48 },
+  hard:   { time: 15, move: 550,  min: 22, max: 34 }
+};
+let diff = 'easy', score = 0, misses = 0, timeLeft = 20, timer = null, moveTimer = null;
+const best = JSON.parse(localStorage.getItem('ttt-best') || '{}');
+
+function showBest() { bestEl.textContent = best[diff] || 0; }
+showBest();
+
+document.querySelectorAll('#levels button').forEach(b => b.addEventListener('click', () => {
+  diff = b.dataset.d;
+  document.querySelectorAll('#levels button').forEach(x => x.classList.toggle('on', x === b));
+  showBest();
+}));
+
+function placeTarget() {
+  const d = DIFF[diff], bw = board.clientWidth, bh = board.clientHeight;
+  const s = d.min + Math.random() * (d.max - d.min);
+  t.style.width = s + 'px'; t.style.height = s + 'px';
+  t.style.left = Math.random() * (bw - s) + 'px';
+  t.style.top = Math.random() * (bh - s) + 'px';
+}
+
+function start() {
+  const d = DIFF[diff];
+  score = 0; misses = 0; timeLeft = d.time;
+  scoreEl.textContent = 0; missEl.textContent = 0; timeEl.textContent = d.time;
+  playBtn.textContent = 'Restart'; msg.textContent = 'GO! Tap the targets!';
+  t.hidden = false; placeTarget();
+  clearInterval(timer); clearInterval(moveTimer);
+  timer = setInterval(() => { timeLeft--; timeEl.textContent = timeLeft; if (timeLeft <= 0) end(); }, 1000);
+  moveTimer = setInterval(placeTarget, d.move);
+}
+
+board.addEventListener('click', e => {
+  if (timeLeft <= 0 || t.hidden) return;
+  if (e.target === t) { score++; scoreEl.textContent = score; placeTarget(); }
+  else { misses++; missEl.textContent = misses; }
+});
+
+function end() {
+  clearInterval(timer); clearInterval(moveTimer);
+  t.hidden = true;
+  const b = best[diff] || 0, record = score > b;
+  if (record) { best[diff] = score; localStorage.setItem('ttt-best', JSON.stringify(best)); showBest(); }
+  msg.textContent = "Time's up! Final score: " + score + " (" + misses + " misses). " +
+    (record ? 'NEW HIGH SCORE for ' + diff + '! 🏆' : 'Best on ' + diff + ': ' + b + '.');
+}
+
+playBtn.addEventListener('click', start);
+</script>
+</body>
+</html>
