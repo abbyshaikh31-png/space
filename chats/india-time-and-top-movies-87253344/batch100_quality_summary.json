@@ -1,0 +1,17 @@
+{
+  "total_queries": 100,
+  "ok": 96,
+  "fail_rate_pct": 4.0,
+  "avg_urls_per_query": 2.77,
+  "low_quality_flagged": 7,
+  "engine_distribution": {
+    "bing_news": 13,
+    "none": 4,
+    "yahoo_html": 2,
+    "bing_rss": 10,
+    "google_news_rss": 24,
+    "wikipedia_api": 36,
+    "bing_html": 11
+  },
+  "deferred_remaining": 4
+}
