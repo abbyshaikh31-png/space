@@ -1,4 +1,14 @@
-usage: free_search.py [-h] [--log-level LOG_LEVEL]
-                      {search,batch,news,selftest,proxies,serve,stats,prune}
-                      ...
-free_search.py: error: unrecognized arguments: --deadline 20
+12:29:06 INFO    free-search | batch 10/100  86.1s  ok=5 deferred=0
+12:29:20 INFO    free-search | batch 20/100  100.4s  ok=12 deferred=0
+12:29:29 INFO    free-search | batch 30/100  109.9s  ok=22 deferred=0
+12:29:48 INFO    free-search | batch 40/100  128.7s  ok=32 deferred=0
+12:29:55 INFO    free-search | batch 50/100  135.8s  ok=41 deferred=0
+12:30:00 INFO    free-search | batch 60/100  140.1s  ok=49 deferred=0
+12:30:31 INFO    free-search | batch 70/100  171.3s  ok=55 deferred=0
+12:30:48 INFO    free-search | batch 80/100  188.9s  ok=58 deferred=0
+12:30:48 INFO    free-search | batch 90/100  188.9s  ok=58 deferred=0
+12:31:12 INFO    free-search | batch 100/100  212.7s  ok=62 deferred=0
+
+batch done: 62/100 served, 178 results
+wrote /opt/render/project/src/agent_workspace/batch100_full.json
+wrote 38 deferred queries to /opt/render/project/src/agent_workspace/batch100_deferred.txt
