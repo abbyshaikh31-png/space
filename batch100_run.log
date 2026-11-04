@@ -1,0 +1,4 @@
+usage: free_search.py [-h] [--log-level LOG_LEVEL]
+                      {search,batch,news,selftest,proxies,serve,stats,prune}
+                      ...
+free_search.py: error: unrecognized arguments: --deadline 20
