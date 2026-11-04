@@ -10,3 +10,5 @@ ddgs
 aiohttp
 beautifulsoup4
 lxml
+requests
+curl_cffi
