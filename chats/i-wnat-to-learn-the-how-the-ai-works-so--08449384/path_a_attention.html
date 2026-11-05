@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Path A: Attention Computed by Hand</title><style>body{font:15px/1.6 Georgia,serif;max-width:780px;margin:24px auto;padding:0 18px;color:#111}table{border-collapse:collapse;width:100%;margin:8px 0 20px}td,th{border:1px solid #bbb;padding:6px 9px;font-family:ui-monospace,monospace;text-align:right}th{font-family:system-ui;background:#eef1f6}h1,h2,h3,h4{font-family:system-ui}h4{margin:16px 0 4px}p{font-size:15px}.note{color:#555;font-size:13px}.sh{color:#0a5;font-size:12px}</style></head><body>
+<h1>Path A - Attention Computed by Hand</h1>
+<p class="note">Every number below was produced by <code>path_a_walkthrough.py</code> (NumPy, no deep-learning framework): a 3-token toy sequence with D=8, d_k=d_v=4.</p>
+<h2>0. Setup and shapes</h2>
+<table><thead><tr><th>Symbol</th><th>Shape</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>X</td><td>(3, 8)</td><td>token embeddings</td></tr>
+<tr><td>PE</td><td>(3, 4)</td><td>sinusoidal positions (broadcast over dims)</td></tr>
+<tr><td>Xin</td><td>(3, 8)</td><td>X + PE</td></tr>
+<tr><td>Q,K</td><td>(3, 4)</td><td>queries and keys</td></tr>
+<tr><td>V</td><td>(3, 4)</td><td>values</td></tr>
+<tr><td>S</td><td>(3, 3)</td><td>raw scores Q K^T</td></tr>
+<tr><td>Sn = S / sqrt(d_k)</td><td>(3, 3)</td><td>scaled scores, sqrt(4)=2</td></tr>
+<tr><td>A</td><td>(3, 3)</td><td>softmax weights</td></tr>
+<tr><td>Z</td><td>(3, 4)</td><td>context vectors A V</td></tr>
+</tbody></table>
