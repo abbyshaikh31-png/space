@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Subway Surfers — Endless Runner</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden;background:#05070e;color:#fff;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-user-select:none;user-select:none;touch-action:none}
+#stage{position:fixed;inset:0;display:grid;place-items:center;background:radial-gradient(circle at 50% 15%,#141c3a,#05070e 70%)}
+#game{display:block;border-radius:16px;box-shadow:0 24px 80px rgba(0,0,0,.75),0 0 0 1px rgba(255,255,255,.09)}
+#overlay{position:fixed;inset:0;display:grid;place-items:center;background:rgba(4,6,14,.82);backdrop-filter:blur(5px);z-index:9}
+#panel{width:min(92vw,420px);text-align:center;padding:26px 28px;border-radius:20px;background:linear-gradient(180deg,rgba(20,26,52,.96),rgba(9,12,26,.97));border:1px solid rgba(255,255,255,.13);box-shadow:0 30px 70px rgba(0,0,0,.62)}
+h1{font-size:clamp(24px,6vw,40px);font-weight:900;background:linear-gradient(92deg,#ffd93d,#ff7a45,#ff4d6d);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:#93a9d4;font-size:11.5px;letter-spacing:3.5px;text-transform:uppercase;margin-top:6px}
+#msg{color:#b6c7e8;font-size:13.5px;line-height:1.7;margin:14px 0 0}
+#stats{margin-top:12px;font-size:13.5px;color:#8ea5cc;line-height:1.9}
+#stats b{color:#ffd93d}
+button{margin-top:16px;border:0;cursor:pointer;padding:13px 34px;border-radius:999px;font-size:16px;font-weight:800;color:#101528;background:linear-gradient(92deg,#ffd93d,#ff9f1c);box-shadow:0 6px 0 #b35c00}
+button:active{transform:translateY(4px);box-shadow:0 2px 0 #b35c00}
+.keys{margin-top:15px;font-size:12px;color:#8698bd;line-height:2}
+kbd{display:inline-block;background:#1a2444;border:1px solid #35477d;border-bottom-width:2px;border-radius:6px;padding:1px 7px;margin:0 2px;font:inherit;font-weight:700;color:#e3ecff}
+.hidden{display:none!important}
+</style>
+</head>
+<body>
+<div id="stage"><canvas id="game"></canvas></div>
+<div id="overlay"><div id="panel">
+<h1>SUBWAY SURFERS</h1>
+<div class="sub">endless runner</div>
+<p id="msg">Dodge trains, jump barriers, slide under beams, grab coins.<br>How far can you run?</p>
+<div id="stats"></div>
+<button id="btn">PLAY</button>
+<div class="keys"><kbd>&larr;</kbd><kbd>&rarr;</kbd> lane &nbsp; <kbd>&uarr;</kbd>/<kbd>Space</kbd> jump &nbsp; <kbd>&darr;</kbd> slide &nbsp; <kbd>P</kbd> pause</div>
+</div></div>
+<script>
+"use strict";
+(function(){
+const cv=document.getElementById('game'),ctx=cv.getContext('2d');
+const W=480,H=720,CX=240,HOR=300,GRD=610,LANE=112;
+const LW=[-LANE,0,LANE];
+const rnd=(a,b)=>a+Math.random()*(b-a);
+const pick=a=>a[(Math.random()*a.length)|0];
+const clamp=(v,a,b)=>v<a?a:(v>b?b:v);
+function fit(){const s=Math.min(Math.min(innerWidth-14,560)/W,(innerHeight-14)/H);
+ cv.style.width=(W*s)+'px';cv.style.height=(H*s)+'px';
+ const d=Math.min(devicePixelRatio||1,2);cv.width=Math.round(W*d);cv.height=Math.round(H*d);
+ ctx.setTransform(d,0,0,d,0,0);}
+addEventListener('resize',fit);fit();
+]<]minimax[>[// ---------- state ----------
+const OVL=document.getElementById('overlay'),BTN=document.getElementById('btn'),MSG=document.getElementById('msg'),ST=document.getElementById('stats');
+let state='menu';
+const P={lane:1,x:0,y:0,vy:0,slide:0,t:0};
+let objs=[],coins=[],parts=[],pops=[],speed=8,dist=0,score=0,got=0,multi=1,runT=0,last=0,shake=0,spawnD=0;
+const MAXZ=48,COLORS=['#e2402f','#2f6fd0','#2fa355','#d9a521'];
+function reset(){
+ P.lane=1;P.x=0;P.y=0;P.vy=0;P.slide=0;P.t=0;
+ objs=[];coins=[];parts=[];pops=[];
+ speed=8;dist=0;score=0;got=0;multi=1;runT=0;shake=0;spawnD=14;
+ spawnBlock(24);spawnBlock(36);spawnBlock(48);
+}
+function spawnBlock(z){
+ z=z||MAXZ;
+ const roll=Math.random();
+ if(roll<0.30){
+  const l=pick([0,1,2]);objs.push({t:'barrier',lane:l,z:z,hit:false});
+  if(dist>120&&Math.random()<0.4)objs.push({t:'barrier',lane:pick([0,1,2].filter(x=>x!==l)),z:z,hit:false});
+ }else if(roll<0.62){
+  const l=pick([0,1,2]);const low=Math.random()<(dist>220?0.4:0.12);
+  objs.push({t:'train',lane:l,z:z,len:low?1.4:rnd(3,6),low:low,kind:pick(COLORS),hit:false});
+  if(dist>180&&Math.random()<0.45&&!low)objs.push({t:'train',lane:pick([0,1,2].filter(x=>x!==l)),z:z,len:rnd(3,5),low:false,kind:pick(COLORS),hit:false});
+ }else if(roll<0.74){
+  objs.push({t:'beam',lane:pick([0,1,2]),z:z,hit:false});
+ }else if(roll<0.84){
+  objs.push({t:'ramp',lane:pick([0,1,2]),z:z,hit:false});
+ }else{
+  const l=pick([0,1,2]);const n=5+((Math.random()*5)|0);const arc=Math.random()<0.35;
+  for(let i=0;i<n;i++)coins.push({lane:l,z:z+i*1.15,y:arc?100+Math.sin(i/n*Math.PI)*90:100,got:false});
+  if(Math.random()<0.45){const l2=pick([0,1,2].filter(x=>x!==l));for(let i=0;i<n;i++)coins.push({lane:l2,z:z+i*1.15,y:100,got:false});}
+ }
+}
+function addPart(x,y,c,n){for(let i=0;i<n;i++)parts.push({x:x,y:y,vx:rnd(-140,140),vy:rnd(-260,-60),c:c,l:rnd(.3,.7)});}
+function pop(txt,x,y,c){pops.push({t:txt,x:x,y:y,c:c,l:1});}
