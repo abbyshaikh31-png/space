@@ -1,0 +1,32 @@
+Looking in indexes: https://download.pytorch.org/whl/cpu
+Collecting torch
+  Obtaining dependency information for torch from https://download-r2.pytorch.org/whl/cpu/torch-2.15.0%2Bcpu-cp311-cp311-manylinux_2_28_x86_64.whl.metadata
+  Using cached https://download-r2.pytorch.org/whl/cpu/torch-2.15.0%2Bcpu-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (35 kB)
+Collecting filelock
+  Obtaining dependency information for filelock from https://files.pythonhosted.org/packages/e0/1b/5e74289a1878e666bb4b65fe5805a04cafcac2aa5f519ef1ead67ef91c56/filelock-4.2.4-py3-none-any.whl.metadata
+  Using cached filelock-4.2.4-py3-none-any.whl.metadata (2.0 kB)
+Collecting typing-extensions>=4.13.0
+  Obtaining dependency information for typing-extensions>=4.13.0 from https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl.metadata
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Discarding https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl#sha256=481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8 (from https://download.pytorch.org/whl/cpu/typing-extensions/) (requires-python:>=3.9): Requested typing-extensions>=4.13.0 from https://files.pythonhosted.org/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl#sha256=481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8 (from torch) has inconsistent Name: expected 'typing-extensions', but metadata has 'typing_extensions'
+  Using cached typing_extensions-4.16.0.tar.gz (113 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × pip subprocess to install build dependencies did not run successfully.
+  │ exit code: 1
+  ╰─> [3 lines of output]
+      Looking in indexes: https://download.pytorch.org/whl/cpu
+      ERROR: Could not find a version that satisfies the requirement flit_core<4,>=3.11 (from versions: none)
+      ERROR: No matching distribution found for flit_core<4,>=3.11
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+error: subprocess-exited-with-error
+
+× pip subprocess to install build dependencies did not run successfully.
+│ exit code: 1
+╰─> See above for output.
+
+note: This error originates from a subprocess, and is likely not a problem with pip.
