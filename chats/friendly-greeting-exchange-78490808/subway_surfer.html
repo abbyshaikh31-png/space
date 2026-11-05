@@ -3,22 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>Rail Rush - Endless Runner</title>
+<title>Subway Rush - Endless Runner</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#080b18;color:#fff;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#070a16;color:#fff;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 button{font:inherit;color:inherit}
-.game{position:relative;width:100%;height:100%;overflow:hidden;background:radial-gradient(circle at 50% 12%,#2a3a78 0,#0e1738 45%,#070a16 100%)}
+#game{position:relative;width:100%;height:100%;overflow:hidden;background:radial-gradient(circle at 50% 12%,#2a3a78,#0e1738 45%,#070a16)}
 canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:none}
-.hud{position:absolute;inset:0;padding:18px;display:flex;justify-content:space-between;align-items:flex-start;pointer-events:none;z-index:2}
-.row{display:flex;gap:9px}
-.card{background:rgba(6,10,24,.7);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:9px 14px;backdrop-filter:blur(10px);box-shadow:0 10px 30px rgba(0,0,0,.35);min-width:78px}
+.hud{position:absolute;inset:0;padding:16px;display:flex;justify-content:space-between;align-items:flex-start;pointer-events:none;z-index:2}
+.row{display:flex;gap:8px}
+.card{background:rgba(6,10,24,.7);border:1px solid rgba(255,255,255,.14);border-radius:13px;padding:8px 13px;backdrop-filter:blur(10px)}
 .lbl{font-size:9px;letter-spacing:2px;color:#9aa6c9;text-transform:uppercase}
-.val{font-size:23px;font-weight:900;line-height:1.15;font-variant-numeric:tabular-nums}
+.val{font-size:22px;font-weight:900;line-height:1.15;font-variant-numeric:tabular-nums}
 .gold{color:#ffd84d}
-.actions{display:flex;gap:8px;pointer-events:auto}
-.ibtn{border:1px solid rgba(255,255,255,.16);background:rgba(6,10,24,.7);border-radius:11px;height:40px;padding:0 12px;font-size:10px;letter-spacing:1.5px;font-weight:700;color:#cfd8f5;cursor:pointer}
-.ibtn:hover{background:#27346a;color:#fff}
+.acts{display:flex;gap:8px;pointer-events:auto}
+.ibtn{border:1px solid rgba(255,255,255,.16);background:rgba(6,10,24,.68);border-radius:11px;height:38px;padding:0 12px;font-size:10px;letter-spacing:1.4px;font-weight:700;color:#cbd5f2;cursor:pointer}
+.ibtn:hover{background:#27356d;color:#fff}
+.ov{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(180deg,rgba(4,6,16,0),rgba(3,5,11,.85));padding:18px;z-index:3}
+.panel{width:min(500px,94vw);text-align:center;background:rgba(11,16,40,.92);border:1px solid rgba(255,255,255,.18);border-radius:24px;padding:32px 26px;box-shadow:0 30px 90px rgba(0,0,0,.7);backdrop-filter:blur(16px)}
+.logo{font-size:clamp(38px,9vw,70px);font-weight:900;letter-spacing:-3px;background:linear-gradient(180deg,#fff 15%,#7ed8ff 55%,#7c5cff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{margin:10px 0 22px;color:#a9b4d5;letter-spacing:4px;text-transform:uppercase;font-size:11px}
+.btn{border:0;border-radius:14px;padding:14px 30px;background:linear-gradient(90deg,#7c5cff,#2bc7ff);color:#fff;font-weight:800;font-size:16px;cursor:pointer}
+.keys{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:22px}
+.keyc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:11px 6px;font-size:11px;color:#a9b4d5;text-align:center}
+.keyc b{display:block;color:#fff;font-size:12px;margin-bottom:4px}
+.stats{display:flex;justify-content:center;gap:26px;margin:18px 0 22px}
+.stats div{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#9aa6c9}
+.stats b{display:block;color:#fff;font-size:26px;margin-top:4px}
+.touch{position:absolute;inset:auto 0 16px;display:none;justify-content:space-between;padding:0 16px;z-index:2;pointer-events:none}
+.pad{display:flex;gap:12px}
+.tbtn{width:60px;height:60px;border-radius:50%;border:1px solid rgba(255,255,255,.22);background:rgba(17,26,59,.6);color:#fff;font-size:22px;pointer-events:auto;user-select:none}
+.hint{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);color:#a9b4d5;font-size:11px;background:rgba(7,10,25,.7);border-radius:20px;padding:7px 14px;z-index:2;white-space:nowrap}
+.hide{display:none!important}
+@media(max-width:700px){.hud{padding:11px}.touch{display:flex}.hint{display:none}.val{font-size:18px}.panel{padding:26px 16px}}
 </style>
-]<]minimax[>[</head>
+</head>
+<body>
 ]<]minimax[>[
