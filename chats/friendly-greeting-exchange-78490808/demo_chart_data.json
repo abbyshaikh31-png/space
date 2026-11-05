@@ -1,0 +1,23 @@
+{
+  "labels": [
+    "Search",
+    "Chat",
+    "Code",
+    "Files",
+    "PDFs",
+    "Charts"
+  ],
+  "series": [
+    {
+      "name": "Requests",
+      "data": [
+        182,
+        240,
+        156,
+        118,
+        74,
+        96
+      ]
+    }
+  ]
+}
