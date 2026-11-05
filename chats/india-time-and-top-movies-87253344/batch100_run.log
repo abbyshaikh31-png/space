@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "/opt/render/project/src/agent_workspace/free_search.py", line 4055, in <module>
-    _rc = main()
-          ^^^^^^
-  File "/opt/render/project/src/agent_workspace/free_search.py", line 3949, in main
-    raw = sys.stdin.read() if args.file == "-" else open(args.file, encoding="utf-8").read()
-                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: '/opt/render/project/src/agent_workspace/chats/india-time-and-top-movies-87253344/queries100.txt'

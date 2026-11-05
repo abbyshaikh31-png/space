@@ -1,7 +1,0 @@
-12:32:18 INFO    free-search | batch 10/38  48.3s  ok=6 deferred=0
-12:32:32 INFO    free-search | batch 20/38  62.4s  ok=16 deferred=0
-12:32:40 INFO    free-search | batch 30/38  70.6s  ok=26 deferred=0
-12:33:00 INFO    free-search | batch 38/38  91.0s  ok=34 deferred=0
-
-batch done: 34/38 served, 99 results
-wrote chats/india-time-and-top-movies-87253344/batch_deferred_full.json
