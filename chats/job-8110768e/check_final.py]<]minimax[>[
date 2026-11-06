@@ -1,0 +1,46 @@
+import re, hashlib, os
+
+p = "ai-transformer-guide.html"
+s = open(p, encoding="utf-8").read()
+
+print("bytes:", len(s.encode("utf-8")))
+print("doctype ok:", s.lstrip().lower().startswith("<!doctype html"))
+print("ends with html:", s.rstrip().lower().endswith("</html>"))
+print("has head:", "<head>" in s and "</head>" in s)
+print("has body:", "<body>" in s and "</body>" in s)
+print("open section:", len(re.findall(r"<section\b", s)))
+print("close section:", len(re.findall(r"</section>", s)))
+print("h1:", len(re.findall(r"<h1\b", s)))
+print("h2:", len(re.findall(r"<h2\b", s)))
+print("h3:", len(re.findall(r"<h3\b", s)))
+print("svg:", s.count("<svg"))
+print("table:", s.count("<table"))
+print("figure:", s.count("<figure"))
+print("eq blocks:", s.count('class="eq"'))
+print("external links:", s.count('href="http'))
+print("math glyphs:", sum(s.count(ch) for ch in ["\u03b1", "\u03b2", "\u03b3", "\u03b8", "\u03c3", "\u00d7", "\u2211"]))
+
+ids = re.findall(r'<section id="([^"]+)"', s)
+print("ids:", ids)
+anchors = re.findall(r'href="#([^"]+)"', s)
+print("missing anchors:", [a for a in anchors if a not in ids])
+
+urls = sorted(set(re.findall(r'href="(https?://[^"]+)"', s)))
+for u in urls:
+    print("url:", u)
+
+# stray token scan: lines that are only brackets / control chars
+for i, line in enumerate(s.split("\n"), 1):
+    t = line.strip()
+    if t in ("]", "[", "]", "]]", "[[", ")}", "{]", ")", "()"):
+        print("STRAY line", i, repr(t))
+
+for tag in ["section", "div", "p", "table", "figure", "svg", "ul", "li", "pre", "nav", "main", "header", "footer"]:
+    o = len(re.findall(r"<%s\b" % tag, s))
+    c = len(re.findall(r"</%s>" % tag, s))
+    if o != c:
+        print("UNBALANCED", tag, o, c)
+
+print("sha256:", hashlib.sha256(s.encode("utf-8")).hexdigest())
+print("pdf exists:", os.path.exists("ai-transformer-guide.pdf"), os.path.getsize("ai-transformer-guide.pdf") if os.path.exists("ai-transformer-guide.pdf") else 0)
+]<]minimax[>[

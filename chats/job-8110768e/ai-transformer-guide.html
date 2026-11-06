@@ -2,231 +2,79 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>How AI Actually Works — Transformers and Large Language Models</title>
 <style>
-:root{--bg:#0a0f1c;--panel:#121a2c;--panel2:#182238;--line:#27324a;--ink:#e8eef9;--muted:#9fb0cc;--accent:#5fe0b0;--accent2:#7fb2ff;--warn:#ffb454;--mono:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace;}
+:root{--bg:#0a0f1c;--panel:#121a2c;--line:#27324a;--ink:#e8eef9;--muted:#9fb0cc;--acc:#5fe0b0;--acc2:#7fb2ff;--warn:#ffb454;--mono:ui-monospace,Menlo,Consolas,monospace}
 *{box-sizing:border-box}
-body{margin:0;background:linear-gradient(140deg,#070b15,#0e1729 55%,#0a1020);color:var(--ink);font:16px/1.68 "Iowan Old Style","Palatino Linotype",Georgia,serif;}
-.wrap{display:grid;grid-template-columns:280px 1fr;max-width:1280px;margin:0 auto;gap:0;}
-nav{position:sticky;top:0;height:100vh;overflow:auto;padding:26px 20px;border-right:1px solid var(--line);background:rgba(8,13,24,.72);}
-nav h4{margin:0 0 12px;font:600 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
-nav a{display:block;padding:5px 0;color:var(--ink);text-decoration:none;font-size:14px;opacity:.85;border-left:2px solid transparent;padding-left:10px;}
-nav a:hover{opacity:1;border-left-color:var(--accent);}
-main{padding:44px 52px 90px;max-width:880px;}
-h1{font-size:44px;line-height:1.1;margin:0 0 14px;letter-spacing:-.5px;}
-h2{font-size:27px;margin:52px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);color:#fff;}
-h3{font-size:19px;margin:26px 0 8px;color:var(--accent2);}
-p{margin:12px 0;}
-ul,ol{padding-left:24px;} li{margin:7px 0;}
-a{color:var(--accent2);}
-.hero p.lead{font-size:19px;color:#cfe0f5;}
-.pill{display:inline-block;margin:4px 6px 0 0;padding:3px 11px;border:1px solid var(--line);border-radius:999px;background:var(--panel2);font:12px var(--mono);color:var(--accent);}
-.small{font-size:14px;color:var(--muted);}
-code{font-family:var(--mono);background:var(--panel2);padding:2px 6px;border-radius:6px;font-size:.88em;}
-pre{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow:auto;}
-pre code{background:none;padding:0;font-size:13px;line-height:1.6;}
-table{border-collapse:collapse;width:100%;margin:18px 0;font-size:14.5px;}
-th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top;}
-th{background:var(--panel2);color:#fff;}
-.card{border:1px solid var(--line);border-radius:14px;padding:16px 18px;background:var(--panel);margin:18px 0;}
-.key{border-left:4px solid var(--accent);background:var(--panel);border-radius:0 12px 12px 0;padding:13px 17px;margin:18px 0;}
-.key b{color:var(--accent);}
-.warn{border-left:4px solid var(--warn);background:var(--panel);border-radius:0 12px 12px 0;padding:13px 17px;margin:18px 0;}
-.warn b{color:var(--warn);}
-.eq{font-size:1.1em;text-align:center;margin:18px 0;padding:14px;background:var(--panel2);border-radius:10px;border:1px solid var(--line);font-family:Georgia,serif;}
-.eq .m{font-family:var(--mono);font-size:.95em;}
-.v{font-style:italic;font-family:Georgia,serif;}
-figure{margin:24px 0;text-align:center;}
-figcaption{color:var(--muted);font-size:13.5px;margin-top:8px;}
-svg{max-width:100%;height:auto;}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-.tile{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--panel);}
-.tile b{display:block;color:var(--accent);margin-bottom:4px;}
-footer{color:var(--muted);font-size:13.5px;margin-top:56px;border-top:1px solid var(--line);padding-top:18px;}
-@media (max-width:920px){.wrap{grid-template-columns:1fr;}nav{position:relative;height:auto;border-right:0;border-bottom:1px solid var(--line);}main{padding:26px 18px 60px;}.grid2{grid-template-columns:1fr;}}
-@media print{body{background:#fff;color:#111;}nav{display:none;}.wrap{display:block;max-width:none;}main{padding:0;}.card,.key,.warn,.eq{background:#fff;}th{background:#eee;color:#111;}h2{page-break-after:avoid;}figure,table,pre{page-break-inside:avoid;}a{color:#111;text-decoration:none;}}
+body{margin:0;background:linear-gradient(140deg,#070b15,#0e1729 55%,#0a1020);color:var(--ink);font:16.5px/1.7 Georgia,"Iowan Old Style",serif}
+.wrap{display:grid;grid-template-columns:270px 1fr;max-width:1300px;margin:0 auto}
+nav{position:sticky;top:0;height:100vh;overflow:auto;padding:26px 18px;border-right:1px solid var(--line);background:rgba(8,13,24,.75)}
+nav h4{margin:0 0 12px;font:600 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+nav a{display:block;padding:5px 0 5px 10px;color:var(--ink);text-decoration:none;font-size:14px;opacity:.85;border-left:2px solid transparent}
+nav a:hover{opacity:1;border-left-color:var(--acc)}
+main{padding:44px 56px 80px}
+h1{font-size:44px;line-height:1.1;margin:0 0 12px}
+h2{font-size:29px;margin:52px 0 12px;padding-top:14px;border-top:1px solid var(--line);color:var(--acc)}
+h3{font-size:19px;margin:26px 0 8px;color:var(--acc2)}
+p{margin:12px 0}
+a{color:var(--acc2)}
+code{font-family:var(--mono);background:#182238;padding:2px 6px;border-radius:6px;font-size:.88em}
+pre{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;overflow:auto}
+pre code{background:none;padding:0;font-size:13px;line-height:1.6}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:14.5px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:#182238}
+.key{border-left:4px solid var(--acc);background:var(--panel);border-radius:0 12px 12px 0;padding:12px 16px;margin:16px 0}
+.warn{border-left:4px solid var(--warn);background:var(--panel);border-radius:0 12px 12px 0;padding:12px 16px;margin:16px 0}
+.eq{font-family:Georgia,serif;font-size:1.1em;text-align:center;margin:16px 0;padding:12px;background:#141d33;border-radius:10px;border:1px solid var(--line)}
+ul,ol{padding-left:22px}
+li{margin:6px 0}
+figure{margin:20px 0;text-align:center}
+figcaption{color:var(--muted);font-size:13.5px;margin-top:8px}
+svg{max-width:100%;height:auto}
+.small{font-size:13.5px;color:var(--muted)}
+.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:3px 12px;margin:4px 6px 0 0;font:12px var(--mono);color:var(--muted)}
+footer{color:var(--muted);font-size:13.5px;margin-top:56px;border-top:1px solid var(--line);padding-top:18px}
+@media(max-width:900px){.wrap{grid-template-columns:1fr}nav{position:relative;height:auto;border-right:0;border-bottom:1px solid var(--line)}main{padding:24px 18px 60px}}
+@media print{body{background:#fff;color:#111}nav{display:none}.wrap{display:block;max-width:none}.key,.warn,.eq{background:#fff}h2{page-break-after:avoid}figure,table,pre{page-break-inside:avoid}a{color:#111;text-decoration:none}}
 </style>
 </head>
 <body>
 <div class="wrap">
-<nav>
+]<]minimax[>[<nav>
 <h4>Contents</h4>
 <a href="#s1">1. The Big Picture</a>
-<a href="#s2">2. Tokens</a>
-<a href="#s3">3. Embeddings</a>
-<a href="#s4">4. Neural Networks</a>
-<a href="#s5">5. Attention</a>
-<a href="#s6">6. Worked Attention</a>
-<a href="#s7">7. Multi-Head Attention</a>
-<a href="#s8">8. The Transformer Block</a>
-<a href="#s9">9. Position</a>
-<a href="#s10">10. From Hidden State to Word</a>
-<a href="#s11">11. Pretraining</a>
-<a href="#s12">12. Alignment</a>
-<a href="#s13">13. Inference &amp; Sampling</a>
-<a href="#s14">14. Context, RAG &amp; Tools</a>
-<a href="#s15">15. Capabilities &amp; Limits</a>
-<a href="#s16">16. Hallucinations</a>
-<a href="#s17">17. Prompting Well</a>
-<a href="#s18">18. Toolkit</a>
+<a href="#s2">2. Tokens: text becomes numbers</a>
+<a href="#s3">3. Embeddings: meaning as geometry</a>
+<a href="#s4">4. Neural networks: the machinery</a>
+<a href="#s5">5. Self-attention: the core idea</a>
+<a href="#s6">6. Worked attention example</a>
+<a href="#s7">7. Multi-head attention</a>
+<a href="#s8">8. The full transformer block</a>
+<a href="#s9">9. Position: where am I in the sequence?</a>
+<a href="#s10">10. From hidden state to next token</a>
+<a href="#s11">11. Pretraining: how the model learns</a>
+<a href="#s12">12. Alignment: SFT, RLHF and beyond</a>
+<a href="#s13">13. Inference and sampling</a>
+<a href="#s14">14. Context, retrieval and tools</a>
+<a href="#s15">15. What models are good at</a>
+<a href="#s16">16. Hallucinations and other limits</a>
+<a href="#s17">17. Prompting well</a>
+<a href="#s18">18. Toolkit and what comes next</a>
 <a href="#refs">References</a>
 </nav>
 <main>
-<header class="hero">
+<header>
 <h1>How AI Actually Works</h1>
-<p class="lead">A ground-up guide to the machinery behind chat assistants, code models and image generators — from raw text to finished answers, with real math, diagrams and worked numbers.</p>
-<p><span class="pill">18 sections</span><span class="pill">Diagrams</span><span class="pill">Math derived</span><span class="pill">No undefined jargon</span></p>
-<p class="small">Reading time ≈ 35 minutes. Every formula traces back to the original Transformer paper and the standard modern treatment of large language models.</p>
-</header><section id="s1">
-<h2>1. The Big Picture</h2>
-<p>Modern AI is not one thing. It is a family of systems built from a handful of ideas, and almost all of the systems you talk to — chatbots, code assistants, image generators, transcription, search — share the same skeleton: <strong>represent data as vectors, learn a scoring function from data, and repeat that function many times.</strong></p>
-
-<h3>What a language model really is</h3>
-<p>A large language model (LLM) is a function that maps a sequence of tokens to a probability distribution over the next token. That is the entire contract. Everything else — the essays, the code, the summaries, the reasoning — is that one operation applied repeatedly.</p>
-
-<div class="eq">
-p(<span class="m">token</span><sub>t+1</sub> | <span class="m">token</span><sub>1</sub>, …, <span class="m">token</span><sub>t</sub>) &nbsp;=&nbsp; softmax( <span class="m">W</span><sub>out</sub> · <span class="m">h</span><sub>t</sub> )
-</div>
-<p>Where <span class="v">h</span><sub>t</sub> is a vector of numbers summarizing everything the model has read so far, and <span class="m">W</span><sub>out</sub> is a learned matrix that scores every token in the vocabulary.</p>
-
-<h3>Three things it is not</h3>
-<ul>
-<li><strong>Not a database lookup.</strong> It does not retrieve a stored answer; it computes a next-token distribution from scratch each time, conditioned on your prompt.</li>
-<li><strong>Not a rule engine.</strong> It has no hand-written symbol table, planner or verifier. Rules like "if the user greets, greet back" are not programmed; they are statistical regularities absorbed during training.</li>
-<li><strong>Not conscious, and not trained on your chat.</strong> Your prompt is processed at inference time. The weights are frozen unless the provider explicitly fine-tunes them.</li>
-</ul>
-
-<figure>
-<svg viewBox="0 0 900 300" role="img" aria-label="Pipeline from prompt text to generated answer">
-<defs>
-<marker id="ar1" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#5fe0b0"/></marker>
-</defs>
-<rect x="10" y="110" width="140" height="60" rx="10" fill="#16213a" stroke="#2b3a55"/>
-<text x="80" y="136" fill="#e8eef9" font-size="13" text-anchor="middle" font-family="sans-serif">Prompt text</text>
-<text x="80" y="155" fill="#9fb0cc" font-size="11" text-anchor="middle" font-family="sans-serif">your words</text>
-<line x1="150" y1="140" x2="188" y2="140" stroke="#5fe0b0" stroke-width="2" marker-end="url(#ar1)"/>
-<rect x="190" y="110" width="130" height="60" rx="10" fill="#16213a" stroke="#2b3a55"/>
-<text x="255" y="136" fill="#e8eef9" font-size="13" text-anchor="middle" font-family="sans-serif">Tokenizer</text>
-<text x="255" y="155" fill="#9fb0cc" font-size="11" text-anchor="middle" font-family="sans-serif">text to IDs</text>
-<line x1="320" y1="140" x2="358" y2="140" stroke="#5fe0b0" stroke-width="2" marker-end="url(#ar1)"/>
-<rect x="360" y="110" width="140" height="60" rx="10" fill="#1b2c3f" stroke="#3d5a7a"/>
-<text x="430" y="136" fill="#e8eef9" font-size="13" text-anchor="middle" font-family="sans-serif">Transformer</text>
-<text x="430" y="155" fill="#9fb0cc" font-size="11" text-anchor="middle" font-family="sans-serif">layers x heads</text>
-<line x1="500" y1="140" x2="538" y2="140" stroke="#5fe0b0" stroke-width="2" marker-end="url(#ar1)"/>
-<rect x="540" y="110" width="130" height="60" rx="10" fill="#16213a" stroke="#2b3a55"/>
-<text x="605" y="136" fill="#e8eef9" font-size="13" text-anchor="middle" font-family="sans-serif">Logits</text>
-<text x="605" y="155" fill="#9fb0cc" font-size="11" text-anchor="middle" font-family="sans-serif">score per token</text>
-<line x1="670" y1="140" x2="708" y2="140" stroke="#5fe0b0" stroke-width="2" marker-end="url(#ar1)"/>
-<rect x="710" y="110" width="150" height="60" rx="10" fill="#223a2e" stroke="#3f7a5e"/>
-<text x="785" y="136" fill="#e8eef9" font-size="13" text-anchor="middle" font-family="sans-serif">Sample</text>
-<text x="785" y="155" fill="#9fb0cc" font-size="11" text-anchor="middle" font-family="sans-serif">pick a token</text>
-<path d="M785 172 C 785 230, 430 240, 430 172" fill="none" stroke="#ffb454" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#ar1)"/>
-<text x="610" y="252" fill="#ffb454" font-size="11.5" text-anchor="middle" font-family="sans-serif">append the token and run the model again</text>
-<text x="450" y="70" fill="#5fe0b0" font-size="14" text-anchor="middle" font-family="sans-serif">One forward pass</text>
-</svg>
-<figcaption>The whole inference loop of a large language model. Everything else in this document zooms into one of these boxes.</figcaption>
-</figure>
-
-<div class="key">
-<b>Mental model to keep.</b> The model is a differentiable program over vectors. Its output text is the path that program takes through probability space, one token at a time. Everything that looks like "understanding" is a byproduct of having learned an enormous number of statistical regularities over text, code, images and other modalities.
-</div>
-</section>
-]<]minimax[>[<section id="s2">
-<h2>2. Tokens: the only input a model really gets</h2>
-<p>Neural networks accept numbers, never words. So before anything clever happens, your text is chopped into <strong>tokens</strong> — small chunks of characters with an integer ID from a fixed vocabulary.</p>
-
-<h3>Subword tokenization</h3>
-<p>Modern tokenizers (BPE, SentencePiece, WordPiece) are learned from the training corpus: frequent character pairs get merged into a single token. The result handles typos, rare names and any language without an "unknown" symbol.</p>
-
-<pre><code>"tokenization"   -&gt; "token" "ization"          (2 tokens)
-"photosynthesis" -&gt; "photo" "synthesis"         (2 tokens)
-"unbelievability"-&gt; "un" "bel" "iev" "ab" "ility" (5 tokens)</code></pre>
-
-<table>
-<tr><th>Property</th><th>Typical value</th><th>Why it matters</th></tr>
-<tr><td>Vocabulary</td><td>32,000 – 256,000 tokens</td><td>The output layer is <code>vocab × d_model</code>; a big vocabulary makes it the largest single block of memory.</td></tr>
-<tr><td>Tokens per word</td><td>≈1.3 – 1.5 (English)</td><td>Prices are quoted per token, so a 1,000-word essay is roughly 1,300–1,500 tokens.</td></tr>
-<tr><td>Other languages</td><td>Highly uneven</td><td>Low-resource languages fragment into many tokens: costlier and harder to learn.</td></tr>
-<tr><td>Context cost</td><td>Attention ≈ quadratic</td><td>Ten times the context is about one hundred times the attention compute.</td></tr>
-</table>
-
-<div class="warn">
-<b>Consequence.</b> A token is neither a word nor a character. Models fail in peculiar ways because of it: rare spellings shatter across many tokens, and numbers may split into single digits, so arithmetic has to be learned over pieces.
-</div>
-</section>
-
-<section id="s3">
-<h2>3. Embeddings: IDs become meaning</h2>
-<p>Each token ID is looked up in a learned table — an <strong>embedding matrix</strong> — producing a dense vector of a few thousand numbers. This is the model's internal representation of a token in context-free form.</p>
-
-<div class="eq">
-e(token) = E[token] &nbsp;&nbsp;&nbsp; where E is a learned table of shape (vocab × d_model)
-</div>
-
-<p>Three properties make these vectors powerful:</p>
-<ul>
-<li><strong>Similar meanings sit close together.</strong> "cat" and "dog" are nearer than "cat" and "invoice", so distance becomes a usable similarity metric.</li>
-<li><strong>Direction is meaning.</strong> Arithmetic on vectors corresponds to arithmetic on concepts: <code>king − man + woman ≈ queen</code>.</li>
-<li><strong>They are trainable.</strong> The embedding table is just another weight matrix, updated by gradient descent like everything else.</li>
-</ul>
-
-<div class="key">
-<b>Mental model.</b> An embedding is a point in a learned geometric space. Similar usage patterns push points together. The whole "meaning" of a word at this stage is its neighbourhood.
-</div>
-</section><section id="s4">
-<h2>4. Neural networks: the machinery inside the transformer</h2>
-<p>A neural network is just a stack of matrix multiplications with a nonlinear "kink" inserted between them. Each layer takes a vector of numbers in and produces a vector of numbers out, and the weights inside each layer are tuned during training.</p>
-
-<div class="eq">
-z = W x + b &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (affine transformation)<br>
-h = &phi;(z) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (activation function)
-</div>
-
-<p>For a single neuron, compute the weighted sum of the inputs, add a bias, then squash it. A layer stacks many such neurons. <strong>ReLU</strong> (<code>max(0, x)</code>) is the standard activation because it is cheap and trains well; modern models also use <strong>GELU</strong> and <strong>SiLU</strong>, which are smooth versions of the same idea.</p>
-
-<h3>Why the nonlinearity matters</h3>
-<p>Stack affine maps without a nonlinearity and you get an affine map — a single linear transformation no matter how many layers you add. The kink is what allows the network to represent curved, non-linear decision boundaries in high-dimensional space.</p>
-
-<div class="grid3">
-<div class="tile"><b>Matrix</b>A stack of learned weights, e.g. 4096&times;4096 floats. Modern models contain tens of billions of these entries.</div>
-<div class="tile"><b>Vector</b>One token's representation. Shape <code>[d_model]</code>, typically 1024 to 8192 floats.</div>
-<div class="tile"><b>Bias</b>A learned offset per neuron. Small, but it lets a layer shift its output range.</div>
-</div>
-
-<div class="warn">
-<b>Practical consequence.</b> The expensive part of a transformer is not the "intelligence"; it is the sheer number of multiply-accumulate operations. This is why GPUs and TPUs matter, and why model pricing tracks parameters and tokens rather than abstract capability.
-</div>
-</section>
-
-<section id="s5">
-<h2>5. Self-attention: the core mechanism</h2>
-<p>Attention answers one question for every token: <em>which other tokens in this sentence matter for understanding me?</em> It does this with three learned matrices per head: <strong>W<sub>Q</sub></strong> (query), <strong>W<sub>K</sub></strong> (key) and <strong>W<sub>V</sub></strong> (value).</p>
-
-<div class="eq">
-Q = X W<sub>Q</sub> &nbsp;,&nbsp; K = X W<sub>K</sub> &nbsp;,&nbsp; V = X W<sub>V</sub><br>
-Attention(Q, K, V) = softmax( (Q K<sup>T</sup>) / &radic;d<sub>k</sub> ) V
-</div>
-
-<p>Read it step by step for a single head:</p>
-<ol>
-<li><strong>Project.</strong> Every token vector <code>x</code> becomes a query, a key and a value.</li>
-<li><strong>Compare.</strong> The dot product <code>q &middot; k</code> between two tokens measures how well they match. Dividing by <code>&radic;d<sub>k</sub></code> keeps the scores in a sane range so the softmax does not saturate.</li>
-<li><strong>Normalize.</strong> Softmax turns the row of scores into weights that sum to 1 — this is the "attention distribution".</li>
-<li><strong>Mix.</strong> Each token's output is the weighted average of all the value vectors, where the weights are the attention distribution.</li>
-</ol>
-
-<h3>Why the scaling term matters</h3>
-<p>Dot products of large vectors grow with dimension (roughly as <code>&radic;d<sub>k</sub></code>). Without the division, one large score dominates the softmax and all other weights collapse to zero, killing gradient flow. Scaling by <code>1/&radic;d<sub>k</sub></code> is the standard fix from the original paper.</p>
-
-<h3>Causal masking</h3>
-<p>In a language model, position <em>i</em> may only attend to positions <code>&le; i</code>. Everything to the right is masked out with a large negative number before the softmax. This makes the model causal: it cannot peek at the answer it is supposed to produce, and it forces the weights to encode "what came before".</p>
-
-<h3>Positional information</h3>
-<p>Attention alone is order-blind — it is a set operation. The original Transformer added learned positional embeddings to the token embeddings. Modern models mostly use <strong>rotary position embeddings (RoPE)</strong>, which encode position by rotating the query and key vectors, letting attention interpolate smoothly to longer contexts.</p>
-
-<div class="key">
-<b>Key idea.</b> Attention is a content-based lookup: the query asks a question, the keys advertise what they answer, and the values carry the payload. Every capability that looks like reasoning is built on this one primitive.
-</div>
-</section>
+<p>A ground-up guide to the AI behind chat assistants, coding copilots, image generators and search engines — from raw characters to finished answers, with the mathematics, worked numbers and diagrams you need to reason about it confidently.</p>
+<p>
+<span class="pill">18 sections</span>
+<span class="pill">3 SVG diagrams</span>
+<span class="pill">Real mathematics</span>
+<span class="pill">Worked examples</span>
+<span class="pill">About 40 minutes</span>
+</p>
+<p class="small">Every formula below is the standard one from the original Transformer paper and the mainstream treatment of modern large language models. Nothing here requires a mathematics background beyond high school.</p>
+</header>
 ]<]minimax[>[
