@@ -1,0 +1,18 @@
+{
+ "generator": "uai",
+ "prompt": "Photorealistic architectural hero shot of a towering AeroTerra vertical forest skyscraper rising over a futuristic Tokyo skyline at golden hour. Cantilevered balconies covered in dense lush green foliage, matte charcoal sky and shadows, sharp emerald accents on the glass. Open, uncluttered negative space in the lower-left third for typography. No text, no logos, no clip-art.",
+ "size": "landscape_32",
+ "style": "photorealistic architectural photography, minimalist ultra-luxury",
+ "tier": "standard",
+ "created": 1794143484.5190978,
+ "images": [
+  {
+   "file": "images/gen_aeroterra-slide-1-hero.png",
+   "url": "images/gen_aeroterra-slide-1-hero.png",
+   "alt": "Photorealistic architectural hero shot of a towering AeroTerra vertical forest s",
+   "w": 1536,
+   "h": 1024,
+   "prompt": "Photorealistic architectural hero shot of a towering AeroTerra vertical forest skyscraper rising over a futuristic Tokyo skyline at golden hour. Cantilevered balconies covered in dense lush green foliage, matte charcoal sky and shadows, sharp emerald accents on the glass. Open, uncluttered negative space in the lower-left third for typography. No text, no logos, no clip-art."
+  }
+ ]
+}
