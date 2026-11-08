@@ -1,0 +1,18 @@
+{
+ "generator": "uai",
+ "prompt": "A blue dart in mid-flight streaking toward the bullseye of a classic dartboard, bold motion lines, clean flat illustration, no people, bright blue and white palette",
+ "size": "landscape_43",
+ "style": "flat illustration",
+ "tier": "standard",
+ "created": 1794143133.9543405,
+ "images": [
+  {
+   "file": "images/gen_blue-dart-dartboard.png",
+   "url": "images/gen_blue-dart-dartboard.png",
+   "alt": "A blue dart in mid-flight streaking toward the bullseye of a classic dartboard, ",
+   "w": 1280,
+   "h": 960,
+   "prompt": "A blue dart in mid-flight streaking toward the bullseye of a classic dartboard, bold motion lines, clean flat illustration, no people, bright blue and white palette"
+  }
+ ]
+}

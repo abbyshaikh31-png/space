@@ -1,0 +1,18 @@
+{
+ "generator": "uai",
+ "prompt": "A dramatic close-up studio portrait of a character, rendered in a 3/4 profile view facing towards the left. The scene features high-contrast chiaroscuro lighting, with a brilliant, crisp key light illuminating the contours of the forehead, nose, and chin from the top-left, casting the back of the head and shoulders into deep shadow. The color palette is earthy and atmospheric, dominated by deep mahogany, charcoal gray, and near-black shadows, accented by warm sandy-beige and pale cream highlights. The background is a flat, neutral slate-gray studio backdrop.",
+ "size": "square",
+ "style": "realistic",
+ "tier": "standard",
+ "created": 1794143017.5418825,
+ "images": [
+  {
+   "file": "images/gen_a-dramatic-close-up-studio-portrait-of-a.png",
+   "url": "images/gen_a-dramatic-close-up-studio-portrait-of-a.png",
+   "alt": "A dramatic close-up studio portrait of a character, rendered in a 3/4 profile vi",
+   "w": 1024,
+   "h": 1024,
+   "prompt": "A dramatic close-up studio portrait of a character, rendered in a 3/4 profile view facing towards the left. The scene features high-contrast chiaroscuro lighting, with a brilliant, crisp key light illuminating the contours of the forehead, nose, and chin from the top-left, casting the back of the head and shoulders into deep shadow. The color palette is earthy and atmospheric, dominated by deep mahogany, charcoal gray, and near-black shadows, accented by warm sandy-beige and pale cream highlights. The background is a flat, neutral slate-gray studio backdrop."
+  }
+ ]
+}
