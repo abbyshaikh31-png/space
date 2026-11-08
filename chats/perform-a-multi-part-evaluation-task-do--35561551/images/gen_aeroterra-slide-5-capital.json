@@ -1,0 +1,18 @@
+{
+ "generator": "uai",
+ "prompt": "Minimalist ultra-luxury presentation background, 16:9 feel. Matte charcoal dark-slate base. Two functional panels divided by a thin geometric grid line. Left panel: a glowing brand-emerald donut chart with four segments on a clean dark field. Right panel: a simple three-tier horizontal milestone ladder with small emerald markers and thin connector lines. Crisp white accents, sharp geometric shapes. No text, no letters, no numbers, no logos, no clip art, no stock icons.",
+ "size": "landscape_32",
+ "style": "flat minimal vector illustration, premium corporate design",
+ "tier": "standard",
+ "created": 1794144170.3690028,
+ "images": [
+  {
+   "file": "images/gen_aeroterra-slide-5-capital.png",
+   "url": "images/gen_aeroterra-slide-5-capital.png",
+   "alt": "Minimalist ultra-luxury presentation background, 16:9 feel. Matte charcoal dark-",
+   "w": 1536,
+   "h": 1024,
+   "prompt": "Minimalist ultra-luxury presentation background, 16:9 feel. Matte charcoal dark-slate base. Two functional panels divided by a thin geometric grid line. Left panel: a glowing brand-emerald donut chart with four segments on a clean dark field. Right panel: a simple three-tier horizontal milestone ladder with small emerald markers and thin connector lines. Crisp white accents, sharp geometric shapes. No text, no letters, no numbers, no logos, no clip art, no stock icons."
+  }
+ ]
+}
