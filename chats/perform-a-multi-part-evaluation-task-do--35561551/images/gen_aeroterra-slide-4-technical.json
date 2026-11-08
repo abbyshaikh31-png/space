@@ -1,0 +1,18 @@
+{
+ "generator": "uai",
+ "prompt": "Widescreen 16:9 corporate presentation slide, minimalist ultra-luxury. Matte charcoal background. Highly technical clean architectural cross-section blueprint of a building balcony, showing detailed layers of structural steel, soil matrices, and a healthy oak tree root system anchored through root-anchoring grid plates. Crisp emerald green callout lines point cleanly to each component. Clean geometric grid dividers. Crisp white premium sans-serif headline at upper left reading \"Active Biomes Transform Concrete Shells Into Net-Positive Power Plants\". Smaller white sans-serif subtitle beneath it reading \"Our patented structural soil and root-anchoring technology allows full-scale oak trees to grow safely on skyscrapers up to 100 stories high.\" No clip-art, no stock icons.",
+ "size": "landscape_32",
+ "style": "technical architectural blueprint, minimalist ultra-luxury, sharp typography",
+ "tier": "standard",
+ "created": 1794143566.2213507,
+ "images": [
+  {
+   "file": "images/gen_aeroterra-slide-4-technical.png",
+   "url": "images/gen_aeroterra-slide-4-technical.png",
+   "alt": "Widescreen 16:9 corporate presentation slide, minimalist ultra-luxury. Matte cha",
+   "w": 1536,
+   "h": 1024,
+   "prompt": "Widescreen 16:9 corporate presentation slide, minimalist ultra-luxury. Matte charcoal background. Highly technical clean architectural cross-section blueprint of a building balcony, showing detailed layers of structural steel, soil matrices, and a healthy oak tree root system anchored through root-anchoring grid plates. Crisp emerald green callout lines point cleanly to each component. Clean geometric grid dividers. Crisp white premium sans-serif headline at upper left reading \"Active Biomes Transform Concrete Shells Into Net-Positive Power Plants\". Smaller white sans-serif subtitle beneath it reading \"Our patented structural soil and root-anchoring technology allows full-scale oak trees to grow safely on skyscrapers up to 100 stories high.\" No clip-art, no stock icons."
+  }
+ ]
+}

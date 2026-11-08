@@ -1,0 +1,18 @@
+{
+ "generator": "uai",
+ "prompt": "Photorealistic split-screen architectural comparison. Left half: a bleak, harsh grey concrete tower facade with faint red warning indicator lights on its surface, cold overcast light. Right half: a luxury AeroTerra modular green terrace system with dense foliage and water droplets, glowing softly at golden hour. A clean vertical geometric grid divider runs down the center. Matte charcoal sky and shadows, sharp emerald accents. Keep the upper-left and lower-left areas open and uncluttered for typography. No text, no logos, no clip-art.",
+ "size": "landscape_32",
+ "style": "photorealistic architectural photography, minimalist ultra-luxury",
+ "tier": "standard",
+ "created": 1794143513.5234842,
+ "images": [
+  {
+   "file": "images/gen_aeroterra-slide-2-problem.png",
+   "url": "images/gen_aeroterra-slide-2-problem.png",
+   "alt": "Photorealistic split-screen architectural comparison. Left half: a bleak, harsh ",
+   "w": 1536,
+   "h": 1024,
+   "prompt": "Photorealistic split-screen architectural comparison. Left half: a bleak, harsh grey concrete tower facade with faint red warning indicator lights on its surface, cold overcast light. Right half: a luxury AeroTerra modular green terrace system with dense foliage and water droplets, glowing softly at golden hour. A clean vertical geometric grid divider runs down the center. Matte charcoal sky and shadows, sharp emerald accents. Keep the upper-left and lower-left areas open and uncluttered for typography. No text, no logos, no clip-art."
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "generator": "uai",
+ "prompt": "Widescreen 16:9 corporate presentation slide, minimalist ultra-luxury. Matte charcoal background. A clean 3D market volume chart of three ascending stepped tiers, with the largest tier glowing brand emerald green. Clean white numerals \"$45B\" float beside the largest tier, connected by pixel-perfect hairline leader lines. Clean geometric grid dividers. Crisp white premium sans-serif headline at upper left reading \"A $45B Underserved Demand for Urban Green Infrastructure\". Smaller white sans-serif subtitle beneath it reading \"High-net-worth buyers are willing to pay a 22% premium for residential units integrated directly with certified biodiverse environments.\" No clip-art, no stock icons.",
+ "size": "landscape_32",
+ "style": "photorealistic minimalist corporate slide, ultra-luxury, sharp typography",
+ "tier": "standard",
+ "created": 1794143538.9404125,
+ "images": [
+  {
+   "file": "images/gen_aeroterra-slide-3-market.png",
+   "url": "images/gen_aeroterra-slide-3-market.png",
+   "alt": "Widescreen 16:9 corporate presentation slide, minimalist ultra-luxury. Matte cha",
+   "w": 1536,
+   "h": 1024,
+   "prompt": "Widescreen 16:9 corporate presentation slide, minimalist ultra-luxury. Matte charcoal background. A clean 3D market volume chart of three ascending stepped tiers, with the largest tier glowing brand emerald green. Clean white numerals \"$45B\" float beside the largest tier, connected by pixel-perfect hairline leader lines. Clean geometric grid dividers. Crisp white premium sans-serif headline at upper left reading \"A $45B Underserved Demand for Urban Green Infrastructure\". Smaller white sans-serif subtitle beneath it reading \"High-net-worth buyers are willing to pay a 22% premium for residential units integrated directly with certified biodiverse environments.\" No clip-art, no stock icons."
+  }
+ ]
+}
