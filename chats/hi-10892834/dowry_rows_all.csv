@@ -1,0 +1,31 @@
+Row,Page,Written_As,Urdu_Predicted,Translit,Qty,Price,Confidence,Note
+1,1,12pis Soup Plate,سوپ پلیٹ (12 پیس),Soup Plate (12 pcs),12,1700,High,
+2,1,12pis Sweet Bowl,سویٹ باؤل (12 پیس),Sweet Bowl (12 pcs),12,1100,High,
+3,1,12pis Sweet Plate,سویٹ پلیٹ (12 پیس),Sweet Plate (12 pcs),12,1080,High,
+4,1,12p Tea Spoon,ٹی اسپون (12 پیس),Tea Spoon (12 pcs),12,280,High,
+5,1,2p Rice Dish,رائس ڈش (2 پیس),Rice Dish (2 pcs),2,1100,Medium,
+6,1,2p Rice Spoon,رائس اسپون (2 پیس),Rice Spoon (2 pcs),2,180,Medium,
+7,1,1p Thali Bowl,تھالی باؤل (1 پیس),Thali Bowl (1 pc),1,480,Medium,550 struck out; 480 written beside
+8,1,6 no ...,نامعلوم (6 نمبر),Unknown (No. 6),,440,Low,Item name unreadable; price uncertain
+9,1,5 no ...,نامعلوم (5 نمبر),Unknown (No. 5),,680,Low,Item name unreadable; price uncertain
+10,1,Spoon,چمچہ,Spoon,,900,Low,Quantity and price uncertain
+11,1,Tea Glass,ٹی گلاس (12 پیس),Tea Glass (12 pcs),12,1100,High,
+12,1,Water Glass,واٹر گلاس (12 پیس),Water Glass (12 pcs),12,1300,High,
+13,1,Tea Cup,ٹی کپ (12 پیس),Tea Cup (12 pcs),12,180,High,
+14,1,Soup Box,سوپ باکس,Soup Box,1,550,Medium,
+15,1,Aska,آسکا,Aska (name uncertain),1,380,Low,Name uncertain
+16,1,Puri Dabba,پوری ڈبہ,Puri Dabba,1,750,Medium,Struck through with correction; price kept as written
+17,1,Clip Tiffin Box,کلپ ٹفن باکس,Clip Tiffin Box,1,300,High,
+18,1,9 no Lotha,9 نمبر لوٹا,9 No. Lota,1,480,High,
+19,1,1 no Lotha,1 نمبر لوٹا,1 No. Lota,1,750,High,
+20,1,12 no Lotha,12 نمبر لوٹا,12 No. Lota,1,200,Medium,Price looks low for size; verify
+21,1,Hot Pring,ہاٹ پاٹ,Hot Pot (as written: Hot Pring),2,2200,Low,Name and price uncertain
+22,1,4pis Jug,جگ (4 پیس),Jug (4 pcs),4,790,Low,Price uncertain
+23,1,4KA Prikapot,4 نمبر پریشر پاٹ,4 No. Pressure Pot,1,1100,Low,Name and price uncertain
+24,1,Pankutti,پنکٹی,Pankutti,1,740,Low,Name uncertain
+25,1,Chhada Stand,چھاڑا اسٹینڈ,Chhada Stand,2,480,Low,Name and price uncertain
+26,1,Saucepan,سوس پین,Saucepan,1,760,Low,Price uncertain
+27,1,Juice Chani,جوس چھلنی,Juice Strainer,2,480,Low,Price uncertain
+28,1,3 no Tray,3 نمبر ٹرے,3 No. Tray,1,550,High,
+29,1,4 no Tray,4 نمبر ٹرے,4 No. Tray,1,750,High,
+30,1,Steel Plate,اسٹیل پلیٹ,Steel Plate,1,,Low,Price unreadable; left blank

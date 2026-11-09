@@ -1,0 +1,88 @@
+page,row,original_name,qty_as_written,price_as_written,predicted_name,ambiguity_flag,confidence,notes
+1,1,12pcs Soup Plate,12 pcs,1700,Soup Plate Dozan (12),clear,medium,
+1,2,12pcs Sweet Bowl,12 pcs,1100,Sweet Katori Dozan (12),clear,medium,
+1,3,12pcs Sweet Plate,12 pcs,1080,Sweet Plate Dozan (12),clear,medium,
+1,4,Tea Spoon,12p (unclear),280,Tea Chammach Dozan,check_qty,low,quantity prefix unclear
+1,5,Rice Dish,2p (unclear),1100,Rice Plate Jodi,check_qty,low,quantity prefix unclear
+1,6,Rice Spoon,2p (unclear),180,Rice Chammach Jodi,check_qty,low,quantity prefix unclear
+1,7,Dal Bowl,1p (unclear),480,Dal Katori,struck_price,low,550 struck through; 480 written beside
+1,8,6no (name unclear),2p (unclear),440,Unclear 6 Nag item,check_name,low,name unclear
+1,9,5no (name unclear),1p (unclear),680,Unclear 5 Nag item,check_name_price,low,name and price unclear
+1,10,Spoon,1p (unclear),900,Chammach (large),check_qty,low,quantity prefix unclear
+1,11,Tea Glass,12p (unclear),1100,Tea Gilas Dozan (12),check_qty,medium,quantity prefix unclear
+1,12,Water Glass,12p (unclear),1300,Paani Gilas Dozan (12),check_qty,medium,quantity prefix unclear
+1,13,Tea Cup,12p (unclear),180,Tea Pyala Dozan (12),check_qty,medium,quantity prefix unclear
+1,14,Soup Box,1p (unclear),550,Soup Dabba,check_qty,medium,quantity prefix unclear
+1,15,Aikka (unclear),1p (unclear),380,Unclear Aikka item,check_name,low,name unclear
+1,16,Puri Dabba,1p (unclear),750,Poori Dabba,struck_name_price,low,item name has strike-through; price unclear
+1,17,Clip Tiffin Box,1p (unclear),300,Clip Tiffin Dabba,check_qty,medium,quantity prefix unclear
+1,18,9no Lotha,1p (unclear),480,Lota 9 Nag,check_qty,medium,quantity prefix unclear
+1,19,1no Lotha (unclear),1p (unclear),750,Lota 1 Nag,check_price,low,price unclear
+1,20,12no Lotha,2p (unclear),200,Lota Dozan (12),check_qty,medium,quantity prefix unclear
+1,21,Hot Pring (unclear),4pcs (unclear),2200,Hot Case (name unclear),check_name,low,name unclear
+1,22,Jug (unclear),1p (unclear),790,Surahi / Jug,check_name,low,name unclear
+1,23,4KA Priyapoot (unclear),1p (unclear),1100,Priyapot (name unclear),check_name,low,name unclear
+1,24,Pankutti (unclear),2p (unclear),740,Pankuti,check_price,low,price unclear
+1,25,Chhada Stand (unclear),1p (unclear),480,Chhada Stand,check_qty,low,name and quantity unclear
+1,26,Soupan (unclear),2p (unclear),760,Soup Pan / Tope,check_name,low,name unclear
+1,27,Juice Chani (unclear),1p (unclear),480,Juice Chhanni,check_qty,low,name and quantity unclear
+1,28,3no Tray,1p (unclear),550,Tray 3 Nag,check_qty,medium,quantity prefix unclear
+1,29,4no Tray,1p (unclear),750,Tray 4 Nag,check_price,medium,price unclear
+1,30,Steel Tray (unclear),1p (unclear),,Steel Tray,missing_price,low,no price clearly visible2,1,MANDI THALA,1p,750,Mandi Thali (large tray),clear,medium
+2,2,BINDEL [?],1p [?],280,Bindel (name unclear),check_name,low
+2,3,SURMADANI,2p,380,Surmedani (kohl pot),clear,medium
+2,4,JAHRA,1p,280,Jahra (strainer; name unverified),check_name,low
+2,5,TEA CHANI,1p,110,Tea Chhanni (tea strainer),clear,medium
+2,6,ULIANI,1p,180,Uliyani (name unverified),check_name,low
+2,7,SPONE LADLI [?],1p,180,Karchi (ladle),check_name,medium
+2,8,STEEL HANDI (struck through),2p,380 (struck),Steel Handi (excluded from total),struck_row,medium
+2,9,NON-STICK TAVA,1p,900,Non-stick Tawa,clear,high
+2,10,THIRKI [?],2p,100,Thirki (name unclear),check_name,low
+2,11,OIL PALI,1p,110,Oil Paali (oil pot),clear,medium
+2,12,BAGIARPAN [?],1p,180,Bagiyarpan (name unclear),check_name,low
+2,13,SERVING LONG,1p,210,Serving Spoon (long),clear,medium
+2,14,PALAM [?],1p,180,Patila/Palam (name unclear),check_name,low
+2,15,PAPER CHUMHA [?],1p,210,Chumta (name unverified),check_name,low
+2,16,TEA DONHA [?],1p,180,Tea Donna (tea bowl),check_name,medium
+2,17,WATER DONHA [?],1p,380,Paani Donna (water bowl),check_name,medium
+2,18,CHANA JAHRA,1p,180,Chana Jhara (chana strainer),check_name,medium
+2,19,GIRDAR BALAN [?],2p,180,Ghardar Balan (name unverified),check_name,low
+2,20,LEMON SQUZAR [?],1p,210,Lemon Squeezer,clear,high
+2,21,GLASS LATER [?],1p,150,Glass Lota (name unclear),check_name,low
+2,22,MOONG VISKAR [?],1p,140,Moong Vishkar (name unclear),check_name,low
+2,23,SILVER JAHA [?],1p,450,Silver Jhara (sieve),check_name,low
+2,24,OWLIN MASHER [?],1p,180,Aloo Masher (likely),check_name,low
+2,25,MANSI CHANI 8NO [?],1p,700,Mansi Chhanni 8 no (name unclear),check_name,low
+2,26,9NO KADAI,1p,900,Kadai 9 no,clear,high
+2,27,HEAVY BARANPORI BIG [?],1p,850 [?],Heavy Baranpori Big (name unclear),check_price,low
+2,28,HEAVY BALANPORI SMALL [?],1p,480,Heavy Balanpori Small (name unclear),check_name,low
+2,29,DHOOM GLASS STAND,1p,600,Glass Stand (Dhoom),check_name,medium
+2,30,STEEL HOTPOT [?],1p,880,Steel Hot Pot,check_name,medium3,1,PURAN CRUSTER,2p,1200,Puran Crusher (2 pcs),check_name,low
+3,2,1no? TIFIN BOX,1 (unclear),2100,Tiffin Box (1 no.),check_qty,medium
+3,3,1p OIL KAN 2 LITER,1p,580,Oil Can 2 Litre,clear,medium
+3,4,1p oil kan heavy,1p,480,Heavy Oil Can,clear,medium
+3,5,1p LITER OIL KAN,1p,380,Oil Can 1 Litre,clear,medium
+3,6,1p KHURBA ADH (unclear),1p,3900,Khurba Adh (name unclear),check_name,low
+3,7,8pcs CON-D OIL KAN BIG,8pcs,3900,Big Oil Can (8 pcs),check_name,low
+3,8,1p Milton Flask,1p,600,Milton Flask,clear,medium
+3,9,1p KITMANI (unclear),1p,350,Kitmani (name unclear),check_name,low
+3,10,1p 2 Self OUNIN IRON (unclear),1p,1300,Two-Self Iron (Owen),check_name,low
+3,11,1p 8x14 DABBAJET,1p,500 (unclear),Dabba Set 8x14,check_price,medium
+3,12,1p 10x14 DABBAJET,1p,1900,Dabba Set 10x14,clear,medium
+3,13,2p CHHADA GIANT,2p,1400,Giant Chhada (2 pcs),clear,medium
+3,14,1p NAYARA WATER CLOWER,1p,1100,Water Cooler (Nayara),check_name,medium
+3,15,1p Bucket,1p,1300,Bucket,clear,medium
+3,16,1p Heavy CHHADA 1BNO,1p,3500,Heavy Chhada (1 no.),check_qty,medium
+3,17,1ps 2nd CHHADA,1ps,900,Chhada (2nd size),check_qty,low
+3,18,1p 4 LITER CHHADA,1p,400,Chhada 4 Litre,clear,medium
+3,19,1p Silver WATER DECHI,1p,750 (unclear),Silver Water Degchi,check_price,low
+3,20,1p Steel GLASS STOW BIG 3pcs,1p,6500,Steel Glass Stand Big (3 pcs),check_name,low
+3,21,1p TANKI,1p,2500,Tanki (water tank),clear,medium
+3,22,2p RISE DRAM HEAVY,2p,1000 (unclear),Rice Drum Heavy (2 pcs),check_price,low
+3,23,1p Silver BASAN,1p,750 (unclear),Silver Basan,check_price,low
+3,24,1p 10NO GLASS LASSI,1p,300,Lassi Glass (10 no.),check_qty,medium
+3,25,1p GLASS TROY (struck),1p,400 (struck),Glass Tray (struck),struck_row,low
+3,26,1p 30x20 BARTAN GIANT,1p,2600,Giant Bartan 30x20,check_name,medium
+3,27,1p 18x3 SELEPAR GIANT,1p,1500,Selepar Giant 18x3,check_name,low
+3,28,1p 550 WATE MEXI CHHANDA,1p,2800,Water Mixi Chhanda (550),check_name,low
+3,29,1p SILVER CHANI,1p,550,Silver Chani (Strainer),clear,medium

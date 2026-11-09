@@ -1,0 +1,31 @@
+Page,Row,Original_name,Price,Predicted_name,Ambiguity_flag,Confidence,Notes
+1,1,12pcs Soup Plate,1700,Soup Plate set (12),clear,medium,Qty 12 pcs
+1,2,12pcs Sweet Bowl,1100,Sweet Katori set (12),clear,medium,Qty 12 pcs
+1,3,12pcs Sweet Plate,1080,Sweet Plate set (12),clear,medium,Qty 12 pcs
+1,4,Tea Spoon,280,Tea Chammach set,check_qty,low,Qty 12p unclear
+1,5,Rice Dish,1100,Rice Katori (pair),check_qty,low,Qty 2p unclear
+1,6,Rice Spoon,180,Rice Chammach (pair),check_qty,low,Qty 2p unclear
+1,7,Dal Bowl,480,Dal Katori,struck_price,low,550 struck through; 480 written beside
+1,8,6no (name unclear),440,Unclear 6 no. item,check_name,low,Name partly unreadable
+1,9,5no (name unclear),680,Unclear 5 no. item,check_name_price,low,Price digit unclear
+1,10,Spoon,900,Chammach,check_qty,low,Qty 1p unclear
+1,11,Tea Glass,1100,Tea Gilas set (12),check_qty,medium,Qty 12p unclear
+1,12,Water Glass,1300,Paani Gilas set (12),check_qty,medium,Qty 12p unclear
+1,13,Tea Cup,180,Tea Pyala set (12),check_qty,medium,Qty 12p unclear
+1,14,Soup Box,550,Soup Dabba,check_qty,medium,Qty 1p unclear
+1,15,Aikka (unclear),380,Unclear Aikka item,check_name,low,Name unclear
+1,16,Puri Dabba,750,Poori Dabba,struck_name_price,low,Name has strike-through; price unclear
+1,17,Clip Tiffin Box,300,Clip Tiffin Dabba,check_qty,medium,Qty 1p unclear
+1,18,9no Lotha,480,Lota (9 no.),check_qty,medium,Qty 1p unclear
+1,19,1no Lotha,750,Lota (1 no.),check_price,low,Price unclear
+1,20,12no Lotha,200,Lota (12 no.),check_qty,medium,Qty 2p unclear
+1,21,Hot Pring,2200,Hot Pot,check_name,low,Name unclear; qty 4pcs unclear
+1,22,Jug,790,Surahi / Jug,check_name,low,Name unclear
+1,23,4KA Priyapoot,1100,Priyapot,check_name,low,Name unclear
+1,24,Pankutti,740,Pankuti,check_price,low,Price unclear
+1,25,Chhada Stand,480,Chhada Stand,check_qty,low,Qty 1p unclear
+1,26,Soupan,760,Soup Pan / Tope,check_name,low,Name unclear
+1,27,Juice Chani,480,Juice Chhanni,check_qty,low,Qty 1p unclear
+1,28,3no Tray,550,Tray (3 no.),check_qty,medium,Qty 1p unclear
+1,29,4no Tray,750,Tray (4 no.),check_price,medium,Price unclear
+1,30,Steel Tray,,Steel Tray,missing_price,low,No price clearly visible

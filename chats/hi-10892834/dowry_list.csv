@@ -1,0 +1,21 @@
+Row,Page,As_written,Predicted_name,Qty_as_written,Amount_as_written,Flag
+1,1,12pis Soup Plate,Soup Plate,12 pcs,1700,
+2,1,12pis Sweet Bowl,Sweet Bowl,12 pcs,1100,
+3,1,12pis Sweet Plate,Sweet Plate,12 pcs,1080,
+4,1,2p Tea Spoon,Tea Spoon,2p,280,qty unclear
+5,1,2p Rice Dish,Rice Dish,2p,1100,qty unclear
+6,1,2p Rice Spoon,Rice Spoon,2p,180,qty unclear
+7,1,1p FNO Bowl,Full Bowl (predicted),1p,480,struck-out 550 above; 480 written
+8,1,6NO ___,6 No. (predicted),2p,440,name and amount unclear
+9,1,5NO ___,5 No. (predicted),2p,680,name unclear
+10,1,Spoone,Spoon,1p,900,qty unclear
+11,1,Tea GLASS,Tea Glass,12p,1100,qty unclear
+12,1,WATER GLASS,Water Glass,12p,1300,qty unclear
+13,1,Tea CUP,Tea Cup,12p,180,qty unclear
+14,1,Soup BOX,Soup Box,1p,550,
+15,1,Aikka,Aikka (unverified),1p,380,name unclear
+16,1,Puri DABBA,Puri Dabba,1p,750,amount unclear
+17,1,CLIP Tiffin BOX,Clip Tiffin Box,1p,300,
+18,1,9NO LOTHA,9 No. Lotha,1p,480,
+19,1,1NO LOTHA,1 No. Lotha,1p,750,amount unclear
+20,1,MISSING - not transcribed on page 1,,,,row cut off in transcription; recheck page 1

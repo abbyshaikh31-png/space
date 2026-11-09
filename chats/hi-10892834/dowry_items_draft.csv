@@ -1,0 +1,31 @@
+row,page,item_as_written,quantity,price,confidence,flag
+1,1,12pis Soup Plate,12,1700,High,
+2,1,12pis Sweet Bowl,12,1100,High,
+3,1,12pis Sweet Plate,12,1080,High,
+4,1,12p Tea Spoon,12,280,High,
+5,1,2p Rice Dish,2,1100,Medium,
+6,1,2p Rice Spoon,2,180,Medium,
+7,1,1p Thali Bowl,1,480,Low,550 struck through; 480 written beside it
+8,1,6 no ...,?,440,Low,Item name unreadable
+9,1,5 no ...,?,680,Low,Item name unreadable
+10,1,Spoon,?,900,Low,Price uncertain
+11,1,Tea Glass,12,1100,Medium,
+12,1,Water Glass,12,1300,Medium,
+13,1,Tea Cup,12,180,Medium,
+14,1,Soup Box,1,550,Medium,
+15,1,Aska,1,380,Low,Spelling uncertain
+16,1,Puri Dabba,1,750,Low,Struck-through correction
+17,1,Clip Tiffin Box,1,300,Medium,
+18,1,9 no Lotha,1,480,Medium,
+19,1,1 no Lotha,1,750,Medium,
+20,1,12 no Lotha,1,200,Medium,
+21,1,Hot Pring,2,2200,Low,Spelling and price uncertain
+22,1,4pis Jug,4,790,Low,Price uncertain
+23,1,4KA Prikapot,1,1100,Low,Spelling and price uncertain
+24,1,Pankutti,1,740,Low,Price uncertain
+25,1,Chhada Stand,2,480,Low,Price uncertain
+26,1,Saucepan,1,760,Low,Price uncertain
+27,1,Juice Chani,2,480,Low,Price uncertain
+28,1,3 no Tray,1,550,Medium,
+29,1,4 no Tray,1,750,Medium,
+30,1,Steel Plate,1,,Low,Price missing

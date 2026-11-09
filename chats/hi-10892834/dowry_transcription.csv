@@ -28,7 +28,7 @@ page,row,item_as_written,qty,price,notes
 1,27,Juse Chani [unclear],2p,480,Spelling uncertain
 1,28,3N/o Tray,1p,550,
 1,29,4N/o Tray,1p,750,
-1,30,Steel Tray [unclear],1p,,Price not clearly legible; implied 1500 if page total 22350 is correct2,1,MANDI THALA,1,750,
+1,30,Steel Tray [unclear],1p,,Price not clearly legible; implied 1500 if page total 22350 is correct2
 2,2,LIDDEL,1,280,Spelling uncertain
 2,3,SURMADANI,2,380,
 2,4,JAHRA,1,280,
@@ -58,7 +58,7 @@ page,row,item_as_written,qty,price,notes
 2,28,Heavy BALANPUR SMALL,1,480,Spelling uncertain
 2,29,DHOOM GLASS STAND,1,600,
 2,30,STEEL HOTPOT,1,880,
-2,Total,,,11290,Written as 11'290 on page3,1,PURAN CRUSTER,2,1200,Item name partly unclear
+2,Total,,,11290,Written as 11'290 on page3
 3,2,1 1/2 TIFIN BOX,1,2100,TIFIN may read TIFINBOX
 3,3,OIL KAN 2 LITER,1,580,
 3,4,OIL KAN HEAVY,1,480,
@@ -78,7 +78,6 @@ page,row,item_as_written,qty,price,notes
 3,18,1 LITER CHHADA,1,400,1 unclear
 3,19,SILVER WATER DECHI,1,750,Price unclear
 3,20,Steel Glass Stow Big 3pcs,1,6500,Qty unclear
-3,SMALL,,,,Struck-through section heading not an item
 3,21,TANKI,1,2500,
 3,22,RISE DRAM HEAVY,2,1000,Price unclear
 3,23,SILVER BASAN,1,750,
@@ -88,4 +87,25 @@ page,row,item_as_written,qty,price,notes
 3,27,18X3 SELEPER GIANT,1,1500,
 3,28,550 WATE MEXI GIRANDAM,1,2800,Name unclear
 3,29,SILVER CHANI,1,550,
-3,Total,,,58440,Handwritten total, amount unclear at this resolution
+3,SMALL,,,,Struck-through section heading not an item
+3,Total,,,58440,Handwritten total
+4,1,MATHAR LAGIAN,1,950,Price read as 950 (trailing dot)
+4,2,MATHAR DHAI,5,7000,Digit could be 1000; subtotal check supports 7000
+4,3,SILVER LIDDEL,1,550,
+4,4,SILVER KATUNIR,1,750,Spelling unclear
+4,5,SILVER BABUNA F2x860,1,34980,F2x860 unclear
+4,6,Hapis PAPER KAJET,1,5500,Hapis unclear
+4,7,SILVER TEHI,1,900,
+4,8,5NO JAHRA,1,100,
+4,9,Ravi Soup Plate,12,1100,
+4,10,VIJANLI,1,90,Spelling unclear
+4,11,3pis MAYASA HOIPOI,1,2800,Mayasa Hoipoi unclear
+4,12,6pinte Ptuy cooler,1,900,Ptuy unclear
+4,13,5liter cooker,1,1400,
+4,14,10liter cooker,1,3000,
+4,15,1No SANIROTIFFIN,1,480,Saniro unclear
+4,16,4pinte Ptuy cooker,1,600,Ptuy unclear
+4,17,JOSECHANI,1,300,unclear
+4,18,Spoke pattic,1,150,unclear
+4,19,MURKUL SACHAA,1,480,unclear
+4,Total,,,62030,Written subtotal; rows sum to 62030
