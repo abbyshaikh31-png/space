@@ -1,31 +1,61 @@
-page,row,original_name,qty,price,predicted_name,confidence,flag
-1,1,12pcs Soup Plate,12,1700,Soup Thali,medium,qty uncertain
-1,2,12pcs Sweet Bowl,12,1100,Sweet Katori,medium,
-1,3,12pcs Sweet Plate,12,1080,Sweet Thali,medium,
-1,4,Tea Spoon,12,280,Chai Chammach,medium,qty unclear
-1,5,Rice Dish,2,1100,Rice Katori,low,qty unclear
-1,6,Rice Spoon,2,180,Rice Chammach,low,qty unclear
-1,7,Dal Bowl,1,480,Dal Katori,medium,550 struck through; 480 written beside
-1,8,6no ...,2,440,Unclear (6 No. item),low,name unreadable
-1,9,5no ...,1,680,Unclear (5 No. item),low,name and price unclear
-1,10,Spoon,1,900,Karchi (serving spoon),low,
-1,11,Tea Glass,12,1100,Chai Gilas,medium,
-1,12,Water Glass,12,1300,Pani Gilas,medium,
-1,13,Tea Cup,12,180,Chai Cup (Piyala),medium,
-1,14,Soup Box,1,550,Soup Dabba,medium,
-1,15,Aikka,1,380,Unclear,low,name unclear
-1,16,Puri Dabba,1,750,Poori Dabba,low,name struck through; price unclear
-1,17,Clip Tiffin Box,1,300,Clip Tiffin Dabba,high,
-1,18,9no Lotha,1,480,Lota 9 No.,medium,
-1,19,1no Lotha,1,750,Lota 1 No.,low,price unclear
-1,20,12no Lotha,2,200,Lota 12 No.,low,
-1,21,Hot Pring,4,2200,Hot Pot,low,qty unclear
-1,22,Jug,1,790,Jag,medium,
-1,23,4KA Priyapoot,1,1100,Priya Pot (unclear),low,
-1,24,Pankutti,2,740,Paan Dabba (predicted),low,price unclear
-1,25,Chhada Stand,1,480,Chhada Stand,medium,
-1,26,Soupan,2,760,Soup Pan,medium,
-1,27,Juice Chani,1,480,Juice Chhanni,medium,
-1,28,3no Tray,1,550,Tray 3 No.,high,
-1,29,4no Tray,1,750,Tray 4 No.,medium,price unclear
-1,30,Steel Tray,1,,Steel Thali,low,no price visible
+page,row,item_as_written,qty,price,notes
+1,1,Soup Plate,12,1700,
+1,2,Sweet Bowl,12,1100,
+1,3,Sweet Plate,12,1080,
+1,4,Tea Spoon,12,280,
+1,5,Rice Dish,2,1100,
+1,6,Rice Spoon,2,180,
+1,7,[unclear] Bowl,1,550,Reading varies: Fold Bowl or Tho Bowl
+1,8,6 No (6N/0),2,480,Qty read as 2 in one reading and [unclear] in another
+1,9,5 No (5N/0),2,440,Qty read as 2 in one reading and [unclear] in another
+1,10,Spoon,,680,Quantity blank
+1,11,Tea Glass,12,900,
+1,12,Water Glass,12,1100,
+1,13,Tea Cup,12,1300,
+1,14,Soup Box,1,180,
+1,15,Akka,1,550,
+1,16,Puri Dabba [unclear],1,380,Reading varies: Puri Dabba or Puri Darrasato
+1,17,Clip [unclear] Box,1,750,Reading varies: Clip Tiffin Box
+1,18,9 No Lotha,1,300,
+1,19,11 No Lotha,1,480,
+1,20,12 No Lotha,1,750,
+1,21,Hot Ring,2,200,
+1,22,[unclear] Jug,4,2200,Reading varies: Ho Jug
+1,23,4ka Priyapot,1,790,
+1,24,Tankutti,1,1100,
+1,25,Ghada Stand,2,760,
+1,26,Souspan,1,480,
+1,27,Juse Chani,2,760,
+1,28,3 No Tray,1,480,
+1,29,4 No Tray,1,550,
+1,30,Steel Tray,1,750,
+2,1,MANDI THALA,1,750,
+2,2,LIDDEL,2,280,
+2,3,SURMADANI,1,380,
+2,4,JAHRA,1,280,
+2,5,TEA CHANI,1,110,
+2,6,ULIANI,1,180,
+2,7,SPONE PATTI,1,180,
+2,8,STEEL HANTHAR,1,380,
+2,9,Non-stic JAVA,1,900,
+2,10,PAIRKI,1,100,
+2,11,OIL PALI,2,110,
+2,12,BAGARDAN,1,180,
+2,13,SERVING TONG,1,210,
+2,14,TALAR,1,180,
+2,15,PAPER CHUMHA,1,210,
+2,16,TEA DONHA,1,180,
+2,17,WATER DONHA,1,380,
+2,18,CHANA JAHRA,1,180,
+2,19,GIRDABALLAN,2,780,
+2,20,LEMON SAUZAR,1,210,
+2,21,GIAS LATER,1,150,
+2,22,MOOWY VISKAR,1,140,
+2,23,SILVER JAVA,1,450,
+2,24,OUNIN MASHER,1,180,
+2,25,MANSI CHANI&NO,1,700,
+2,26,9NO KADAI,1,900,
+2,27,HEAVY BAKANDUI BIG,1,750,
+2,28,HEAVY BALAN PUT SMALL,1,480,
+2,29,DHOOM GUAKS STAND,1,600,
+2,30,Steel Hotpot,1,880,

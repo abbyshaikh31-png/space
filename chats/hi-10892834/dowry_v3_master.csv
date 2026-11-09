@@ -1,0 +1,20 @@
+page,reading,row,item_as_read,qty,price,status
+4,R5,1,MATHAR LAGAN,1,950,ok
+4,R5,2,MATHAR DECHI,50,7000,check_qty_and_price
+4,R5,3,Silver LIDDEL,1,550,ok
+4,R5,4,Silver KABGIR,1,750,ok
+4,R5,5,SILVER BAHUNA F2X860,1,34980,check_price
+4,R5,6,11opis FABER KAJET,1,5500,ok
+4,R5,7,SILVER TEHHI,1,900,ok
+4,R5,8,SNO JAHRA,1,100,ok
+4,R5,9,RAVI Soup Plate,1,1100,ok
+4,R5,10,VILIANI I,1,90,ok
+4,R5,11,3pis NAYASA Hotpoi,3,2800,ok
+4,R5,12,6piale P'tuy COOLER,1,900,check_qty
+4,R5,13,Siler COOLER,5,1400,check_qty
+4,R5,14,10liter COOLER,10,3000,check_qty
+4,R5,15,INO SANTIROTTHINE,1,480,ok
+4,R5,16,4piale P'tuy cooker,4,600,ok
+4,R5,17,JUSECHANI,1,300,ok
+4,R5,18,Spone PATTIC,1,150,ok
+4,R5,19,MURIUL SACHAA,1,480,ok

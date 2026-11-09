@@ -1,0 +1,31 @@
+page,row,item_as_read,qty,price,status,note
+3,1,TURAN CRUSHER,2,1200,check_qty,qty read as 2p
+3,2,11X5 Tiffin Box,1,2100,ok,
+3,3,Oil Kan 2liter,1,580,ok,
+3,4,Oil Kan Heavy,1,480,ok,
+3,5,11liter Oil Kan,1,380,ok,
+3,6,Khurba Dikh Set,1,3900,ok,
+3,7,Spis Con-D Oil Kan Big,3,3900,check_qty,qty read as Spis; verify
+3,8,Million Flask,1,600,ok,
+3,9,Khmani,1,350,ok,
+3,10,2Self Qunin Troly,1,1300,check_name,possibly 2 Self Queen Trolley
+3,11,19x24 Darbaset,1,7500,ok,
+3,12,10X14 Darbaset,7,1900,check_qty,qty read as 7p
+3,13,Canada Stand,1,1400,ok,
+3,14,Nayara Water Cooler,1,1100,ok,
+3,15,Backet,1,1300,ok,
+3,16,Heavy Canada 18No,1,3500,ok,
+3,17,12Nd Canada,1,900,ok,
+3,18,4liter Canada,1,400,ok,
+3,19,Silver Water Dechi,1,750,ok,
+3,20,Steel Gits Stow Big,2,6500,check_qty,2 P's read; verify
+3,21,Small,,,struck,struck row excluded from total
+3,22,Tanki,1,2500,ok,
+3,23,Rise Dram Heavy,2,7000,check_qty,qty read as 2p
+3,24,Silver Basan,1,750,ok,
+3,25,10No Glass Lassi,1,300,ok,
+3,26,Gas Troly,,,struck,struck row excluded from total
+3,27,30X70 Bartan Stand,1,2600,ok,
+3,28,18X3 Seleper Stand,1,1500,ok,
+3,29,550Kiate Mexi Grandad,1,2800,ok,
+3,30,Silver Chani,1,550,ok,
