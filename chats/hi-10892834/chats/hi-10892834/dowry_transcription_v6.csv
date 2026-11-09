@@ -1,0 +1,31 @@
+page,row,item_as_read,quantity_as_read,unit_price_as_read,line_total_as_read,struck_through,flag
+1,1,Soup Plate,12p,UNCLEAR,170,no,
+1,2,Steel Bowl,12p,UNCLEAR,1100,no,
+1,3,Steel Plate,12p,UNCLEAR,1080,no,
+1,4,Tea Spoon,12p,UNCLEAR,280,no,
+1,5,Rice Dish,3p,UNCLEAR,1100,no,
+1,6,Rice Spoon,2p,UNCLEAR,180,no,
+1,7,Fhd Bowl,1p,UNCLEAR,550,no,
+1,8,UNCLEAR,6 No,UNCLEAR,480,no,item UNCLEAR
+1,9,UNCLEAR,5 No,UNCLEAR,440,no,item UNCLEAR
+1,10,Spoon,UNCLEAR,UNCLEAR,680,no,quantity UNCLEAR
+1,11,Tea Glass,UNCLEAR,UNCLEAR,900,no,quantity UNCLEAR
+1,12,Water Glass,12p,UNCLEAR,1100,no,
+1,13,Tea Cup,12p,UNCLEAR,1300,no,
+1,14,Soup Box,1p,UNCLEAR,180,no,
+1,15,Aksa,UNCLEAR,UNCLEAR,550,no,quantity UNCLEAR
+1,16,Puri Dabba,1p,UNCLEAR,380,no,
+1,17,Clip Tiffin Box,1p,UNCLEAR,750,no,
+1,18,9 No Lotha,1p,UNCLEAR,300,no,
+1,19,1 No Lotha,1p,UNCLEAR,480,no,
+1,20,12 No Lotha,1p,UNCLEAR,750,yes,
+1,21,Hot Piring,3p,UNCLEAR,200,no,
+1,22,Jug,4 pcs,UNCLEAR,2200,no,
+1,23,Hka Prizapot,1p,UNCLEAR,790,no,
+1,24,Tawa Kuti,1p,UNCLEAR,1100,no,
+1,25,Chhaad Stand,2p,UNCLEAR,760,yes,
+1,26,Souspan,1p,UNCLEAR,480,no,
+1,27,Juice Chhani,2p,UNCLEAR,760,yes,
+1,28,3 No Tray,1p,UNCLEAR,480,no,
+1,29,4 No Tray,1p,UNCLEAR,550,no,
+1,30,Steel Tray,1p,UNCLEAR,750,yes,

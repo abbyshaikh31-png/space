@@ -1,0 +1,31 @@
+row,gemini_name,gemini_qty,gemini_unit_price,gemini_line_total,chatgpt_name,chatgpt_qty,chatgpt_price_or_total,flag
+1,Soup Plate,12,1700,20400,Soup Plate,12 pcs,1700,unit vs total ambiguous
+2,Sweet Bowl,12,1100,13200,Steel Bowl,12 pcs,1100,name conflict
+3,Sweet Plate,12,1080,12960,Salad Plate,12 pcs,1080,name conflict
+4,Tea Sponge [?],12,280,3360,Tea Sponte [?],12 [?],280,name uncertain
+5,Rice Dish,2,1100,2200,Rice Dish,3p,1100,qty conflict 2 vs 3
+6,Rice Sponge,2,180,360,Rice spone,2p,180,name uncertain
+7,Fulo Bowl,1,550,550,Full Bowl,1p,550,name uncertain
+8,[?],6,480,2880,[illegible],6No,480,name unreadable
+9,[?],5,440,2200,[illegible],5No,440,name unreadable
+10,[?],[?],680,[?],Sponte,—,680,qty and total unreadable
+11,Tea Glass,12,900,10800,Tea Glass,—,900,qty missing in second reading
+12,Water Glass,12,1100,13200,Water Glass,12p,1100,
+13,Tea Cup,12,1300,15600,Tea Cup,12p,1300,
+14,Soup Box,1,180,180,Soup Box,1p,180,
+15,Akka,1,550,550,Aksa [?],1p,550,name uncertain
+16,Puri Darrasato,1,380,380,Puri Paratha [?],1p,380,name conflict
+17,Clip Tiffin Box,1,750,750,Clip Tiffin Box,1p,750,
+18,9No Lotha,9,300,2700,9No lotta,1p,300,qty conflict
+19,11No Lotha,11,480,5280,11No lotta,1p,480,qty conflict
+20,12No Lotha,12,750,9000,12No lotta,1p,750,unit vs total conflict
+21,Hot Ring,2,200,400,Hot Ring,3p,200,qty conflict
+22,W Jug,4,2200,8800,Jug,4 pcs,2200,name conflict
+23,HKA Priyapoi,1,790,790,HKA [?] Pri [?]pot,1p,790,name uncertain
+24,Tankutti,1,1100,1100,Tray,1p,1100,name conflict
+25,Ghada Stand,2,760,1520,Chhaad Stand,2p,760,name uncertain
+26,Souspan,1,480,480,Souspan,1p,480,
+27,Juse Chani,2,760,1520,Juse Chani,2p,760,
+28,3No Tray,1,480,480,3No Tray,3p,480,qty conflict
+29,4No Tray,1,550,550,4No Tray,1p,550,
+30,Steel Tray,1,750,750,Steel Tray,1p,750,

@@ -1,0 +1,31 @@
+page,row,as_written,predicted_name,qty,price,struck,confidence
+1,1,Soup Plate,Soup Plate,12,1700,yes,high
+1,2,Sweet Bowl,Sweet Bowl,12,1100,yes,high
+1,3,Sweet Plate,Sweet Plate,12,1080,yes,high
+1,4,Tea SPONT,Tea Spoon,12,280,yes,high
+1,5,RICE DISH,Rice Dish,2,1100,yes,high
+1,6,RICE SPONE,Rice Spoon,2,180,yes,high
+1,7,FOLD BOWL,Folding Bowl,1,550,yes,medium
+1,8,6N/0,6-no. set (unclear),3,480,no,low
+1,9,5N/0,5-no. set (unclear),3,440,no,low
+1,10,Spone,Spoon,1,680,yes,medium
+1,11,Tea GIHASS,Tea Gilas (glass),12,900,yes,high
+1,12,WATER GIHASS,Pani Gilas (water glass),12,1100,yes,high
+1,13,Tea CUP,Tea Cup,12,1300,yes,high
+1,14,Soup BOX,Soup Box,1,180,yes,medium
+1,15,Akka,Akka (unclear),1,550,yes,low
+1,16,PURI DARRASATO,Puri Dabba (unclear),1,380,yes,low
+1,17,CLIP TITTIN BOX,Clip Tiffin Box,1,750,yes,medium
+1,18,9No LOTHA,9-no. Lota,1,300,yes,high
+1,19,11No LOTHA,11-no. Lota,1,480,yes,high
+1,20,12No LOTHA,12-no. Lota,1,750,yes,high
+1,21,Hot Ring,Hot Ring (trivet),2,200,yes,medium
+1,22,w JUG,Water Jug,4,2200,yes,medium
+1,23,HKA PRIYAPOT,unclear,1,790,yes,low
+1,24,Tankutti,Tankutti (unclear),1,1100,yes,low
+1,25,GHADA STAND,Ghada Stand,2,760,yes,medium
+1,26,Souspan,Saucepan,1,480,yes,high
+1,27,JUSE CHANI,Juice Channi,2,760,yes,medium
+1,28,3No TRAY,3-no. Tray,1,480,yes,high
+1,29,4No TRAY,4-no. Tray,1,550,yes,high
+1,30,Steel TRAT,Steel Thali (tray),1,750,yes,medium

@@ -1,31 +1,31 @@
-page,row,original_name,qty_as_written,price_as_written,predicted_name,ambiguity_flag,confidence
-1,1,12pcs Soup Plate,12 pcs,1700,Soup Plate set (12),clear,medium
-1,2,12pcs Sweet Bowl,12 pcs,1100,Sweet Katori set (12),clear,medium
-1,3,12pcs Sweet Plate,12 pcs,1080,Sweet Plate set (12),clear,medium
-1,4,Tea Spoon,12p (unclear),280,Tea Chammach set,check_qty,low
-1,5,Rice Dish,2p (unclear),1100,Rice Katori (pair),check_qty,low
-1,6,Rice Spoon,2p (unclear),180,Rice Chammach (pair),check_qty,low
-1,7,Dal Bowl (550 struck; 480 written beside),1p (unclear),480,Dal Katori,struck_price,low
-1,8,6no (name unclear),2p (unclear),440,Unclear 6 no. item,check_name,low
-1,9,5no (name unclear),1p (unclear),680 (unclear),Unclear 5 no. item,check_name_price,low
-1,10,Spoon,1p (unclear),900,Chammach,check_qty,low
-1,11,Tea Glass,12p (unclear),1100,Tea Gilas set (12),check_qty,medium
-1,12,Water Glass,12p (unclear),1300,Paani Gilas set (12),check_qty,medium
-1,13,Tea Cup,12p (unclear),180,Tea Pyala set (12),check_qty,medium
-1,14,Soup Box,1p (unclear),550,Soup Dabba,check_qty,medium
-1,15,Aikka (unclear),1p (unclear),380,Unclear Aikka item,check_name,low
-1,16,Puri Dabba (name struck),1p (unclear),750 (unclear),Poori Dabba,struck_name_price,low
-1,17,Clip Tiffin Box,1p (unclear),300,Clip Tiffin Dabba,check_qty,medium
-1,18,9no Lotha,1p (unclear),480,Lota (9 no.),check_qty,medium
-1,19,1no Lotha (unclear),1p (unclear),750 (unclear),Lota (1 no.),check_price,low
-1,20,12no Lotha,2p (unclear),200,Lota (12 no.),check_qty,medium
-1,21,Hot Pring (unclear),4pcs (unclear),2200,Hot Pot (name unclear),check_name,low
-1,22,Jug (unclear),1p (unclear),790,Surahi / Jug,check_name,low
-1,23,4KA Priyapoot (unclear),1p (unclear),1100,Priyapot (name unclear),check_name,low
-1,24,Pankutti (unclear),2p (unclear),740 (unclear),Pankuti,check_price,low
-1,25,Chhada Stand (unclear),1p (unclear),480,Chhada Stand,check_qty,low
-1,26,Soupan (unclear),2p (unclear),760,Soup Pan / Tope,check_name,low
-1,27,Juice Chani (unclear),1p (unclear),480,Juice Chhanni,check_qty,low
-1,28,3no Tray,1p (unclear),550,Tray (3 no.),check_qty,medium
-1,29,4no Tray,1p (unclear),750 (unclear),Tray (4 no.),check_price,medium
-1,30,Steel Tray (unclear),1p (unclear),(not visible),Steel Tray,missing_price,low
+page,row,item_as_read,predicted_name,quantity,price,struck,confidence
+1,1,Soup Plate,Soup Plate,12 pcs,1700,yes,high
+1,2,Sweet Bowl,Sweet Bowl,12 pcs,1100,yes,high
+1,3,Sweet Plate,Sweet Plate,12 pcs,1080,yes,high
+1,4,Tea SPONT,Tea Spoon,12,280,yes,medium
+1,5,RICE DISH,Rice Dish,2,1100,yes,medium
+1,6,RICE SPONE,Rice Spoon,2,180,yes,medium
+1,7,FOLD BOWL,Folding Bowl,1,550,yes,medium
+1,8,6N/0,6 No. (size unclear),3,480,no,low
+1,9,5N/0,5 No. (size unclear),3,440,no,low
+1,10,Spone,Spoon,1,680,yes,medium
+1,11,Tea GIHASS,Tea Glass,12,900,yes,medium
+1,12,WATER GIHASS,Water Glass,12,1100,yes,medium
+1,13,Tea CUP,Tea Cup,12,1300,yes,high
+1,14,Soup BOX,Soup Box,1,180,yes,medium
+1,15,Akka,Akka (unidentified),1,550,yes,low
+1,16,PURI DARRASATO,Puri Dabba,1,380,yes,low
+1,17,CLIP TITTIN BOX,Clip Tiffin Box,1,750,yes,medium
+1,18,9No LOTHA,9 No. Lota,1,300,yes,medium
+1,19,11No LOTHA,11 No. Lota,1,480,yes,medium
+1,20,12No LOTHA,12 No. Lota,1,750,yes,medium
+1,21,Hot Ring,Hot Ring,2,200,yes,medium
+1,22,w JUG,Water Jug,4,2200,yes,medium
+1,23,HKA PRIYAPOT,unidentified,1,790,yes,low
+1,24,Tankutti,Tankutti (Tanki),1,1100,yes,low
+1,25,GHADA STAND,Ghada Stand,2,760,yes,low
+1,26,Souspan,Saucepan,1,480,yes,medium
+1,27,JUSE CHANI,Juice Channi,2,760,yes,medium
+1,28,3No TRAY,3 No. Tray,1,480,yes,medium
+1,29,4No TRAY,4 No. Tray,1,550,yes,medium
+1,30,Steel TRAT,Steel Thaal,1,750,yes,medium
