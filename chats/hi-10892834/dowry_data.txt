@@ -1,0 +1,106 @@
+1|1|Soup Plate|12 pis|1700|
+1|2|Sweet Bowl|12 pis|1100|
+1|3|Sweet Plate|12 pis|1080|
+1|4|Tea Spoon|1? p|280|Quantity unclear; possibly 12
+1|5|Rice Dish|2 p|1100|
+1|6|Rice Spoon|2 p|180|
+1|7|[unclear] No Bowl|1 p|480|Possibly 5 No Bowl; 550 written and struck through above 480
+1|8|6 No ...|[unclear]|440|Quantity not legible
+1|9|5 No ...|[unclear]|680|Quantity not legible
+1|10|Spoon|[unclear]|900|Quantity not legible
+1|11|Tea Glass|12 p|1100|
+1|12|Water Glass|12 p|1300|
+1|13|Tea Cup|12 p|180|
+1|14|Soup Box|1 p|550|
+1|15|Aikka|1 p|380|
+1|16|Puri Dabba (struck through)|1 p|150|Price could be 150 or 750
+1|17|Clip in Box|1 p|300|"in" unclear
+1|18|9 No Lotha|1 p|480|
+1|19|1 No Lotha|1 p|750|
+1|20|12 No Lotha|1 p|200|
+1|21|Hot Pring w JUG|2 p|2200|4 pis also appears near line
+1|22|4KA Priyapoi|4 pis|790|Quantity placement uncertain
+1|23|Tankutti|1 p|1100|
+1|24|Ghada Stand|2 p|640|Price could be 740
+1|25|Soupan|1 p|480|
+1|26|Juse Chani|2 p|760|
+1|27|3NO Tray|1 p|480|
+1|28|4NO Tray|1 p|550|
+1|29|Sied Tray|1 p|750|Price read as 750 from f50
+2|1|MANDI THALA|1 p|750|Tick mark
+2|2|LINDEL|1 p|280|Tick mark
+2|3|SURMADANI|2 p|380|Tick mark
+2|4|JAHRA|1 p|280|Tick mark
+2|5|TEA CHANI|1 p|110|Tick mark
+2|6|ULIANI|1 p|180|Tick mark
+2|7|SPONE PALLI|1 p|180|Tick mark
+2|8|Steel [unclear]|2 p|380|Name struck through
+2|9|NON-STIK TAVA|1 p|900|Tick mark
+2|10|[unclear] PATHKI|2 p|100|Tick mark
+2|11|OIL PALI|1 p|110|Tick mark
+2|12|BAGSARPAN|1 p|180|Tick mark
+2|13|SERVING LONG|1 p|210|Arrow mark
+2|14|[unclear] PALAK|1 p|180|Arrow mark
+2|15|PAPER CHOMA|1 p|210|Arrow mark
+2|16|TEA DONHA|1 p|180|Arrow mark
+2|17|WATER DONHA|1 p|380|Arrow mark
+2|18|CHANA JAHRA|1 p|180|Arrow mark
+2|19|GIRDABALIAN|2 p|180|Arrow mark
+2|20|LEMON SUZARI|1 p|210|Arrow mark
+2|21|GLASS LATER|1 p|150|Arrow mark
+2|22|MOONG VISKAR|1 p|140|Arrow mark
+2|23|SILVER THALI|1 p|450|Arrow mark
+2|24|OUNIN MASHER|1 p|180|Arrow mark
+2|25|MANSI CHANI 8NO|1 p|700|Tick mark
+2|26|2NO KADAI|1 p|900|Tick mark
+2|27|HEAVY BALANPUI BIG|1 p|750|Tick mark
+2|28|HEAVY BALANPUI SMALL|1 p|480|Tick mark
+2|29|DHOOM GLASS STAND|1 p|600|Tick mark
+2|30|STEEL HOTPOT|1 p|880|Tick mark3|1|DURAN CRUSHER|2 p|1200|Arrow mark
+3|2|1N5 TiffinBox|1 p|2100|1N5 possibly unclear
+3|3|OIL KAN 2 liter|1 p|580|
+3|4|oil kan Heavy|1 p|480|
+3|5|1 liter oil kan|1 p|380|
+3|6|KHURBAZ ADH JEI [unclear]|1 p|3900|
+3|7|Cond-D OIL KAN Big|[unclear] pis|3900|Possibly 2 pis or 8 pis
+3|8|Million Flask|1 p|600|
+3|9|KITMANI|1 p|350|
+3|10|2 Sett Ounin Trolly|1 p|1300|
+3|11|9x24 Darbar Jet|1 p|500|
+3|12|10x14 Darbar Jet|1 p|1900|
+3|13|CHHADA STAND|1 p|1400|
+3|14|NAYARA WATER CLOVER|1 p|1100|
+3|15|Bucket|1 p|1300|
+3|16|Heavy CHHADA BNO|1 p|3500|
+3|17|12 Nd CHHADA|1 p|900|
+3|18|4 liter CHHADA|1 p|400|
+3|19|Silver Winter Dechi|1 p|750|
+3|20|Steel Glass Stone Big 3pcs|1 p|6500|
+3|21|Tanki|1 p|2500|
+3|22|Rise Dram Heavy|2 p [unclear]|1000|Earlier reading gave 7000
+3|23|Silver Basan|1 p|750|
+3|24|10 No Glass Lassi|2 p [unclear]|300|
+3|25|Glass Trolly|1 p|400|Name struck through
+3|26|30x30 Bartan Stand|1 p|2600|
+3|27|18x3 Selaper Stand|1 p|1500|
+3|28|550 Kilo Mexi Chandan|1 p|2800|Chandan partly unclear
+3|29|Silver Chani|1 p|550|Printed total 58440, row sum 45440 (gap 13000)
+4|1|MATHAR LAGUAN|1 p|950|
+4|2|MATHAR DHCHI|5 pr|1000|
+4|3|Silver LIDDEL|1 p|550|
+4|4|Silver KARIGIR|1 p|750|
+4|5|Silver BATHUNA [unclear] x860|[unclear] (12 or f2)|34980|Possibly 3480
+4|6|[unclear] PAPER KAJET|1 p|5500|
+4|7|Silver [unclear] (FEHI?)|1 p|900|
+4|8|5NO JAHRA|5|100|
+4|9|RAVI SOUP [unclear] (PLATE?)|1 p|1100|
+4|10|VLTANI|1 p|90|
+4|11|3pcs [unclear] HOIPOI|1 p|2800|
+4|12|[unclear] plate Stuy cooker|1 p|900|
+4|13|5liter Cooker|1 p|1400|
+4|14|10liter cooker|1 p|3000|
+4|15|1NO SANIROTIFINE|1 p|480|
+4|16|4plate Stuy cooker|1 p|600|
+4|17|JOSE CHAHNI|1 p|300|
+4|18|Spoon Pattic|1 p|150|
+4|19|MURKUL SACHAA|1 p|480|Printed subtotal 62030, row sum 56030 (gap 6000)

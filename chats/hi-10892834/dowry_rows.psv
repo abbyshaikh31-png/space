@@ -1,31 +1,31 @@
-page|row|original_name|price|predicted_name|ambiguity_flag|confidence
-1|1|12pcs Soup Plate|1700|Soup Plate set (12)|clear|medium
-1|2|12pcs Sweet Bowl|1100|Sweet Katori set (12)|clear|medium
-1|3|12pcs Sweet Plate|1080|Sweet Plate set (12)|clear|medium
-1|4|Tea Spoon|280|Tea Chammach set|check_qty|low
-1|5|Rice Dish|1100|Rice Katori (pair)|check_qty|low
-1|6|Rice Spoon|180|Rice Chammach (pair)|check_qty|low
-1|7|Dal Bowl (550 struck; 480 beside)|480|Dal Katori|struck_price|low
-1|8|6no (name unclear)|440|Unclear 6 no. item|check_name|low
-1|9|5no (name unclear)|680|Unclear 5 no. item|check_name_price|low
-1|10|Spoon|900|Chammach|check_qty|low
-1|11|Tea Glass|1100|Tea Gilas set (12)|check_qty|medium
-1|12|Water Glass|1300|Paani Gilas set (12)|check_qty|medium
-1|13|Tea Cup|180|Tea Pyala set (12)|check_qty|medium
-1|14|Soup Box|550|Soup Dabba|check_qty|medium
-1|15|Aikka (unclear)|380|Unclear Aikka item|check_name|low
-1|16|Puri Dabba (name struck)|750|Poori Dabba|struck_name_price|low
-1|17|Clip Tiffin Box|300|Clip Tiffin Dabba|check_qty|medium
-1|18|9no Lotha|480|Lota (9 no.)|check_qty|medium
-1|19|1no Lotha (unclear)|750|Lota (1 no.)|check_price|low
-1|20|12no Lotha|200|Lota (12 no.)|check_qty|medium
-1|21|Hot Pring (unclear)|2200|Hot Pot|check_name|low
-1|22|Jug (unclear)|790|Surahi / Jug|check_name|low
-1|23|4KA Priyapoot (unclear)|1100|Priyapot|check_name|low
-1|24|Pankutti (unclear)|740|Pankuti|check_price|low
-1|25|Chhada Stand (unclear)|480|Chhada Stand|check_qty|low
-1|26|Soupan (unclear)|760|Soup Pan / Tope|check_name|low
-1|27|Juice Chani (unclear)|480|Juice Chhanni|check_qty|low
-1|28|3no Tray|550|Tray (3 no.)|check_qty|medium
-1|29|4no Tray|750|Tray (4 no.)|check_price|medium
-1|30|Steel Tray (unclear)||Steel Tray|missing_price|low
+page|row|item_as_written|qty_prefix|price_as_written|marks|confidence
+1|1|Soup Plate|12pis|1700|-|High
+1|2|Sweet Bowl|12pis|1100|-|High
+1|3|Sweet Plate|12pis|1080|-|High
+1|4|Tea Spoon|12p|280|-|High
+1|5|Rice Dish|2p|1100|-|High
+1|6|Rice Spoon|2p|180|-|High
+1|7|Ano [?] Bowl|1p|480 (550 struck through)|strike-through on 550|Low
+1|8|6no [?]|-|440 [?]|-|Low
+1|9|5no [?]|-|680 [?]|-|Low
+1|10|Spoon|-|900 [?]|-|Low
+1|11|Tea Glass|12p|1100 [?]|-|Medium
+1|12|Water Glass|12p|1300 [?]|-|Medium
+1|13|Tea Cup|12p|180 [?]|-|Medium
+1|14|Soup Box|1p|550 [?]|-|Medium
+1|15|Aikka [?]|1p|380 [?]|-|Low
+1|16|Puri Dabba|1p|750 [?]|strike-through on Dabba line|Low
+1|17|Clip Tiffin Box|1p|300 [?]|-|Medium
+1|18|9no Lotha [?]|1p|480 [?]|-|Low
+1|19|1no Lotha [?]|1p|750 [?]|-|Low
+1|20|12no Lotha [?]|1p|200 [?]|-|Low
+1|21|Hot Pring [?]|2p|2200 [?]|-|Low
+1|22|Jug|4pis|790 [?]|-|Medium
+1|23|4ka Priyapot [?]|1p|1100 [?]|-|Low
+1|24|Tankutti [?]|1p|640 [?]|-|Low
+1|25|Chhada Stand|2p|480 [?]|-|Medium
+1|26|Soupan [?]|1p|760 [?]|-|Low
+1|27|Juse Chani [?]|2p|480 [?]|-|Low
+1|28|3no Tray|1p|550 [?]|-|Medium
+1|29|4no Tray|1p|750 [?]|-|Medium
+1|30|Steel Tray [?]|1p|[?]|-|Low

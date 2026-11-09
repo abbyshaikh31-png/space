@@ -1,0 +1,16 @@
+page,row,original_name,qty_as_written,price_as_written,price_value,predicted_name,ambiguity_flag,confidence,notes
+1,1,12pcs Soup Plate,12 pcs,1700,1700,Soup Plate Set (12),clear,medium,Qty clear
+1,2,12pcs Sweet Bowl,12 pcs,1100,1100,Sweet Katori Set (12),clear,medium,Qty clear
+1,3,12pcs Sweet Plate,12 pcs,1080,1080,Sweet Plate Set (12),clear,medium,Qty clear
+1,4,Tea Spoon,12p (unclear),280,280,Tea Chammach Set,check_qty,low,Qty unclear
+1,5,Rice Dish,2p (unclear),1100,1100,Rice Katori (pair),check_qty,low,Qty unclear
+1,6,Rice Spoon,2p (unclear),180,180,Rice Chammach (pair),check_qty,low,Qty unclear
+1,7,Dal Bowl,1p (unclear),480,480,Dal Katori,struck_price,low,550 struck; 480 written beside
+1,8,6no (name unclear),2p (unclear),440,440,Unclear 6 No. Item,check_name,low,Name partly unreadable
+1,9,5no (name unclear),1p (unclear),680,680,Unclear 5 No. Item,check_name_price,low,Price digit unclear
+1,10,Spoon,1p (unclear),900,900,Chammach,check_qty,low,Qty unclear
+1,11,Tea Glass,12p (unclear),1100,1100,Tea Gilas Set (12),check_qty,medium,Qty unclear
+1,12,Water Glass,12p (unclear),1300,1300,Paani Gilas Set (12),check_qty,medium,Qty unclear
+1,13,Tea Cup,12p (unclear),180,180,Tea Pyala Set (12),check_qty,medium,Qty unclear
+1,14,Soup Box,1p (unclear),550,550,Soup Dabba,check_qty,medium,Qty unclear
+1,15,Aikka (unclear),1p (unclear),380,380,Unclear Aikka Item,check_name,low,Name unclear

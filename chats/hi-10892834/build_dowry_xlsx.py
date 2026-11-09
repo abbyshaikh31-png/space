@@ -1,57 +1,53 @@
-from openpyxl import Workbook
-from openpyxl.styles import Font, PatternFill, Alignment
+import re
+import openpyxl
+from openpyxl.styles import Font, PatternFill
 
-rows = [
-(1,"Soup Plate","12pcs","1700"),
-(2,"Sweet Bowl","12pcs","1100"),
-(3,"Sweet Plate","12pcs","1080"),
-(4,"Tea Spoon","12p","280"),
-(5,"Rice Dish","2p","1100"),
-(6,"Rice Spoon","2p","180"),
-(7,"Half Bowl","1p","450?"),
-(8,"6 no ...","2p?","440"),
-(9,"5 no ...","1p?","680"),
-(10,"Spoon","1p?","900"),
-(11,"Tea Glass","12p","1100"),
-(12,"Water Glass","12p","1300"),
-(13,"Tea Cup","12p","180"),
-(14,"Soup Box","1p","550"),
-(15,"Aicka","1p","380"),
-(16,"Puri Dabba","1p","750"),
-(17,"Clip Tiffin Box","1p","300"),
-(18,"9 no Lotha","1p","480"),
-(19,"1 no Lotha","1p","750"),
-(20,"12 no Lotha","2p","200"),
-(21,"Hot Pring?","2p?","200"),
-(22,"4pcs Jug","4pcs","2200"),
-(23,"4KA Priyapot?","1p","790?"),
-(24,"Pankutti?","1p","1100"),
-(25,"Chhada Stand?","2p","740?"),
-(26,"Soupan","1p","480"),
-(27,"Juse Chani?","2p","760"),
-(28,"3no Tray","1p","480"),
-(29,"4no Tray","1p","550"),
-(30,"Steel Tray?","1p","750?"),
-]
+text = open('dowry_data.txt', encoding='utf-8').read()
+pat = re.compile(r'([1-4])\|(\d{1,2})\|([^|]*)\|([^|]*)\|([^|]*)\|(.*?)(?=[1-4]\|\d{1,2}\||\n|$)', re.S)
+records = []
+for m in pat.finditer(text):
+    page, row, name, qty, price, notes = m.groups()
+    name, qty, price, notes = name.strip(), qty.strip(), price.strip(), notes.strip()
+    try:
+        p = int(price.replace(',', '').replace("'", ''))
+    except ValueError:
+        p = None
+    records.append((int(page), int(row), name, qty, p, notes))
 
-wb = Workbook()
+# Hyderabad (Begum Bazaar) bartan-trade predicted spellings
+fix = {'Lotha': 'Lota', 'Dechi': 'Degchi', 'Tava': 'Tawa', 'Chani': 'Chhanni',
+       'Kadai': 'Kadhai', 'pis': 'pcs', 'Tiffin': 'Tiffin', 'Bucket': 'Balti',
+       'Chhanni': 'Chhanni', 'Thali': 'Thali', 'Jet': 'Jug', 'Trolly': 'Trolley'}
+
+def predict(n):
+    out = n
+    for k, v in fix.items():
+        out = re.sub(r'\b' + re.escape(k) + r'\b', v, out, flags=re.I)
+    return out
+
+wb = openpyxl.Workbook()
 ws = wb.active
-ws.title = "Page 1"
-ws.append(["BIHAR / MAINS - Dowry Item List, Page 1 (date 03/11/26, partly obscured)"])
-ws.append([])
-ws.append(["Row","Item (as written)","Quantity","Price (as written)","Price (number)","Uncertain"])
-for c in ws[3]:
-    c.font = Font(bold=True)
-    c.fill = PatternFill("solid", fgColor="DDDDDD")
-for r, item, qty, price in rows:
-    num = int(price.replace("?", ""))
-    unsure = "Yes" if "?" in item + qty + price else "No"
-    ws.append([r, item, qty, price, num, unsure])
-ws.append([])
-ws.append(["", "Total (as legible on page)", "", "", 22350, "Verify"])
-ws.column_dimensions["B"].width = 26
-ws.column_dimensions["D"].width = 18
-ws.column_dimensions["F"].width = 12
-ws["A1"].font = Font(bold=True, size=12)
-wb.save("dowry_list_page1.xlsx")
-print("saved dowry_list_page1.xlsx with", len(rows), "rows")
+ws.title = 'Items'
+hdr = ['Page', 'Row', 'Name as written', 'Predicted name (Begum Bazaar)', 'Quantity', 'Price (Rs)', 'Notes']
+ws.append(hdr)
+for c in ws[1]:
+    c.font = Font(bold=True, color='FFFFFF')
+    c.fill = PatternFill('solid', fgColor='1F4E78')
+for r in records:
+    ws.append([r[0], r[1], r[2], predict(r[2]), r[3], r[4], r[5]])
+for col, w in zip('ABCDEFG', [7, 6, 34, 34, 16, 12, 50]):
+    ws.column_dimensions[col].width = w
+
+chk = wb.create_sheet('Page Check')
+chk.append(['Page', 'Rows', 'Sum of prices', 'Printed total', 'Gap'])
+printed = {1: 22350, 2: 11290, 3: 58440, 4: 62030}
+for i, pg in enumerate(sorted(printed), start=2):
+    chk.append([pg, f'=COUNTIF(Items!A:A,{pg})', f'=SUMIF(Items!A:A,{pg},Items!F:F)',
+                printed[pg], f'=D{i}-C{i}'])
+chk.append(['All pages', '', '=SUM(C2:C5)', 154210, '=D6-C6'])
+
+wb.save('dowry_items.xlsx')
+print('rows parsed:', len(records))
+for pg in sorted(printed):
+    s = sum(r[4] or 0 for r in records if r[0] == pg)
+    print('page', pg, 'sum', s, 'printed', printed[pg], 'gap', printed[pg] - s)
