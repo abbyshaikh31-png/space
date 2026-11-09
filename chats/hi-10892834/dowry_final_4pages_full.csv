@@ -1,0 +1,31 @@
+page,row,original_name,qty_as_written,price,included,predicted_name,ambiguity_flag,confidence,notes
+1,1,12pcs Soup Plate,12 pcs,1700,yes,Soup Plate set 12,clear,medium,
+1,2,12pcs Sweet Bowl,12 pcs,1100,yes,Sweet Katori set 12,clear,medium,
+1,3,12pcs Sweet Plate,12 pcs,1080,yes,Sweet Plate set 12,clear,medium,
+1,4,Tea Spoon,12p unclear,280,yes,Tea Chammach set,check_qty,low,
+1,5,Rice Dish,2p unclear,1100,yes,Rice Katori pair,check_qty,low,
+1,6,Rice Spoon,2p unclear,180,yes,Rice Chammach pair,check_qty,low,
+1,7,Dal Bowl,1p unclear,480,yes,Dal Katori,struck_price,low,550 struck through; 480 written beside
+1,8,6no name unclear,2p unclear,440,yes,Unclear 6 no item,check_name,low,Name partly unreadable
+1,9,5no name unclear,1p unclear,680,yes,Unclear 5 no item,check_name_price,low,Price digit unclear
+1,10,Spoon,1p unclear,900,yes,Chammach,check_qty,low,
+1,11,Tea Glass,12p unclear,1100,yes,Tea Gilas set 12,check_qty,medium,
+1,12,Water Glass,12p unclear,1300,yes,Paani Gilas set 12,check_qty,medium,
+1,13,Tea Cup,12p unclear,180,yes,Tea Pyala set 12,check_qty,medium,
+1,14,Soup Box,1p unclear,550,yes,Soup Dabba,check_qty,medium,
+1,15,Aikka unclear,1p unclear,380,yes,Unclear Aikka item,check_name,low,Name unclear
+1,16,Puri Dabba,1p unclear,750,yes,Poori Dabba,struck_name_price,low,Name has strike-through; price unclear
+1,17,Clip Tiffin Box,1p unclear,300,yes,Clip Tiffin Dabba,check_qty,medium,
+1,18,9no Lotha,1p unclear,480,yes,Lota 9 no,check_qty,medium,
+1,19,1no Lotha,1p unclear,750,yes,Lota 1 no,check_price,low,Price unclear
+1,20,12no Lotha,2p unclear,200,yes,Lota 12 no,check_qty,medium,
+1,21,Hot Pring,4pcs unclear,2200,yes,Hot Pot,check_name,low,Name unclear
+1,22,Jug,1p unclear,790,yes,Surahi Jug,check_name,low,
+1,23,4KA Priyapoot,1p unclear,1100,yes,Priyapot,check_name,low,
+1,24,Pankutti,2p unclear,740,yes,Pankuti,check_price,low,Price unclear
+1,25,Chhada Stand,1p unclear,480,yes,Chhada Stand,check_qty,low,
+1,26,Soupan,2p unclear,760,yes,Soup Pan Tope,check_name,low,
+1,27,Juice Chani,1p unclear,480,yes,Juice Chhanni,check_qty,low,
+1,28,3no Tray,1p unclear,550,yes,Tray 3 no,check_qty,medium,
+1,29,4no Tray,1p unclear,750,yes,Tray 4 no,check_price,medium,
+1,30,Steel Tray,1p unclear,,no,Steel Tray,missing_price,low,No price visible; written page total minus computed sum implies 570 (unverified)

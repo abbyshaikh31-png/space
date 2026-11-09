@@ -2,3 +2,5 @@ pillow
 pymupdf
 pypdf
 openpyxl
+pymupdf
+pymupdf
