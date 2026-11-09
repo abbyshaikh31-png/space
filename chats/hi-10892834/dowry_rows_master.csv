@@ -1,0 +1,61 @@
+Page,Row,Item_as_read,Qty,Price_Rs,Confidence
+P1,1,Soup Plate,12ps,1700,H
+P1,2,Salad Bowl,12ps,1100,H
+P1,3,Salad Plate,12ps,1080,H
+P1,4,Tea spoon,12p,280,H
+P1,5,Rice Dish,2p,1100,H
+P1,6,Rice spoon,2p,180,H
+P1,7,Fry Bowl,1p,550,H
+P1,8,[unreadable],6no,480,L
+P1,9,[unreadable],5no,440,L
+P1,10,Spale,[unreadable],680,M
+P1,11,Tea Glass,12p,900,H
+P1,12,Water Glass,12p,1100,H
+P1,13,Tea cup,12p,1300,H
+P1,14,Soup Box,1p,180,H
+P1,15,[unreadable],1p,550,L
+P1,16,Puri Dabba,1p,380,H
+P1,17,Clip Tin Box,1p,750,H
+P1,18,9no Lotha,1p,300,H
+P1,19,11no Lotha,1p,480,H
+P1,20,12no Lotha,1p,750,H
+P1,21,Hot Ring,2p,200,H
+P1,22,Water Jug,4ppis,2200,H
+P1,23,HKA Principal,1p,790,M
+P1,24,Tin bucket,1p,1100,H
+P1,25,Chadar Stand,2p,760,H
+P1,26,Soup pan,1p,480,H
+P1,27,Juice Chani,2p,760,H
+P1,28,3no Tray,1p,480,H
+P1,29,4no Tray,1p,550,H
+P1,30,Steel Tray,1p,750,H
+P2,1,MANDI HALVA,1p,750,H
+P2,2,LIND[?],1p,280,M
+P2,3,SURMADANI,2p,380,H
+P2,4,JHARA,1p,280,H
+P2,5,TEA CHANNI,1p,110,H
+P2,6,ULANI,1p,180,M
+P2,7,SPOON THALI,1p,180,H
+P2,8,STEEL [?],1p,380,M
+P2,9,NON-STIC TAVA,1p,900,H
+P2,10,THIKKI,2p,100,M
+P2,11,OIL PALI,1p,110,H
+P2,12,BASTARPON,1p,180,M
+P2,13,SERVING TONG,1p,210,H
+P2,14,[unreadable],1p,180,L
+P2,15,PAPER CHHANI,1p,210,H
+P2,16,TEA DOWLA,1p,180,H
+P2,17,WINTER DOWLA,1p,380,H
+P2,18,CHHANA JHARA,1p,180,H
+P2,19,GIRDA BHALAN[?],2p,780,M
+P2,20,LEMON SQUEAR,1p,210,M
+P2,21,GAS LATER,1p,150,M
+P2,22,MOOMY VISKAR,1p,140,M
+P2,23,Silver JHARA,1p,450,H
+P2,24,ONION MASHER,1p,180,H
+P2,25,MANSI CHINI 8 NO,1p,700,M
+P2,26,GINO KADAI,1p,900,M
+P2,27,Heavy BIRAN[?] BIG,1p,750,M
+P2,28,Heavy BIRAN[?] Small,1p,480,M
+P2,29,Dhoom Glass Small,1p,600,M
+P2,30,Steel hot pot,1p,880,H

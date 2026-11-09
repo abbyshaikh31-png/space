@@ -1,0 +1,31 @@
+page|row|original_name_as_read|price_inr|predicted_name|ambiguity_flag|confidence|notes
+1|1|Soup Plate|1700|Steel Soup Plate (Soup Thali)|Clear|High|Qty 12 pcs
+1|2|Salad Bowl|1100|Steel Salad Katori|Clear|High|Qty 12 pcs
+1|3|Salad Plate|1080|Steel Salad Plate (Chhota Thali)|Clear|High|Qty 12 pcs
+1|4|Tea spoon|280|Steel Tea Spoon (Chai Chamcha)|Clear|High|Qty 12 pcs
+1|5|Rice Dish|1100|Steel Rice Dish (Bhagona)|Clear|High|Qty 2 pcs
+1|6|Rice spoon|180|Steel Rice Serving Spoon (Karchi)|Clear|High|Qty 2 pcs
+1|7|Fry Bowl|550|Steel Fry Bowl (Frying Katori)|Clear|Medium|Qty 1 pc
+1|8|[unreadable]|480|Unidentified (name illegible)|Illegible|Low|Qty 6 no; re-read needed
+1|9|[unreadable]|440|Unidentified (name illegible)|Illegible|Low|Qty 5 no; re-read needed
+1|10|Spale|680|Steel Spale (spelling unverified)|Unclear|Low|Qty unclear; re-read needed
+1|11|Tea Glass|900|Steel Tea Glass (Chai Gilas)|Unclear|Medium|Qty unclear
+1|12|Water Glass|1100|Steel Water Glass (Gilas)|Clear|High|Qty 12 pcs
+1|13|Tea cup|1300|Steel Tea Cup (Chai Katori)|Clear|High|Qty 12 pcs
+1|14|Soup Box|180|Soup Dabba (Soup Container)|Clear|Medium|Qty 1 pc
+1|15|Attar|550|Attar Daani (Perfume Container)|Unclear|Medium|Qty 1 pc
+1|16|Puri Dabba|380|Puri Dabba (Puri Box)|Unclear|Medium|Qty 1 pc
+1|17|Clip Tin Box|750|Tin Clip Box (Tin Dabba with Clip)|Clear|Medium|Qty 1 pc
+1|18|9no Lotta|300|Steel Lota (Size 9)|Clear|High|Qty 1 pc
+1|19|11no Lotta|480|Steel Lota (Size 11)|Clear|High|Qty 1 pc
+1|20|12no Lotta|750|Steel Lota (Size 12)|Clear|High|Qty 1 pc
+1|21|Hot Plate|200|Hot Plate (Trivet, Garam Patta)|Clear|Medium|Qty 2 pcs
+1|22|Juicer|2200|Juicer (Juice Machine)|Unclear|Low|Qty 4 pps unclear; re-read needed
+1|23|4K A Pressure|790|4 Litre Pressure Cooker (Kukker)|Unclear|Medium|Qty 1 pc; size read as 4K
+1|24|Tin bucket|1100|Tin Bucket (Tin Balti)|Clear|High|Qty 1 pc
+1|25|Chahad Stand|760|Chaad Stand (Tray Stand)|Unclear|Low|Qty 2 pcs; name uncertain
+1|26|Saucepan|480|Saucepan (Tapeli)|Clear|High|Qty 1 pc
+1|27|Tube Chani|760|Tube Channi (Tube Strainer)|Unclear|Medium|Qty 2 pcs
+1|28|3no Tray|480|Steel Tray (Size 3)|Clear|High|Qty 1 pc
+1|29|4no Tray|550|Steel Tray (Size 4)|Clear|High|Qty 1 pc
+1|30|Steel Tray|750|Steel Tray (Tasla)|Clear|Medium|Qty 1 pc; verifier flagged for re-read

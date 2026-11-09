@@ -1,0 +1,16 @@
+page|row|original_name_as_read|price_inr|predicted_name|ambiguity_flag|confidence|notes
+1|1|Soup Plate (12ps)|1700|Steel Soup Plate (Katori), set of 12|clear|high|Price is for set of 12 as written
+1|2|Salad Bowl (12ps)|1100|Steel Salad Bowl (Katori), set of 12|clear|high|Price is for set of 12 as written
+1|3|Salad Plate (12ps)|1080|Steel Salad Plate, set of 12|clear|high|Price is for set of 12 as written
+1|4|Tea spoon (12p)|280|Steel Tea Spoon (Chamcha), set of 12|clear|high|Price is for set of 12 as written
+1|5|Rice Dish (2p)|1100|Steel Rice Dish (Bhagona), pair|clear|high|Price is for pair as written
+1|6|Rice spoon (2p)|180|Steel Rice Serving Spoon (Karchi), pair|clear|high|Price is for pair as written
+1|7|Fry Bowl (1p)|550|Steel Fry Bowl (Kadhai Katori)|clear|high|Single piece
+1|8|[unreadable] (6no)|480|Unidentified steel item, 6 nos|unreadable|low|Re-read needed on original photo
+1|9|[unreadable] (5no)|440|Unidentified steel item, 5 nos|unreadable|low|Re-read needed on original photo
+1|10|Spale ([unclear])|680|Steel Thali/Plate (tentative)|unclear|low|Reading of Spale uncertain; quantity unclear
+1|11|Tea Glass ([unclear])|900|Steel Tea Glass (Gilas)|unclear|medium|Quantity unclear
+1|12|Water Glass (12p)|1100|Steel Water Glass (Gilas), set of 12|clear|high|Price is for set of 12 as written
+1|13|Tea cup (12p)|1300|Steel Tea Cup (Piyala), set of 12|clear|high|Price is for set of 12 as written
+1|14|Soup Box (1p)|180|Steel Soup Box (Dabba)|clear|high|Single piece
+1|15|Attar (1p)|550|Attar Daani (perfume holder)|unclear|medium|Reading of Attar partly uncertain

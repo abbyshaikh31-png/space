@@ -1,0 +1,31 @@
+page,row,name_as_written,predicted_name_hyderabad,qty_as_written,price_as_written,struck_through,confidence,note
+1,1,12pis Soup Plate,Shorba Plate Set (12),12 pcs,1700,no,medium,qty read by vision
+1,2,12pis Sweet Bowl,Mithai Katori Set (12),12 pcs,1100,no,medium,
+1,3,12pis Sweet Plate,Mithai Plate Set (12),12 pcs,1080,no,medium,
+1,4,12p Tea SponE,Chai Chammach Set (12),12 pcs,280,no,low,spoon spelling uncertain
+1,5,2p RICE Dish,Chawal Katori (pair),2 pcs,1100,no,medium,
+1,6,2p RICE Spone,Chawal Chammach (pair),2 pcs,180,no,medium,
+1,7,1p Fild Bowl,Dal Katori,1 pc,550,check,low,earlier read showed 480 beside a struck 550; page total matches 550
+1,8,6n/0,Unclear 6 No item,6 no,480,no,low,name unreadable
+1,9,5n/0,Unclear 5 No item,5 no,440,no,low,name unreadable
+1,10,Spone,Chammach,1 pc,680,no,medium,
+1,11,Tea Glass,Chai Gilas Set (12),12 pcs,900,no,medium,
+1,12,Water Glass,Paani Gilas Set (12),12 pcs,1100,no,medium,
+1,13,Tea Cup,Chai Pyala Set (12),12 pcs,1300,no,medium,
+1,14,Soup Box,Shorba Dabba,1 pc,180,no,medium,
+1,15,Akka,Unclear,1 pc,550,no,low,name unreadable
+1,16,Puri Darrba Sato,Poori Darba Satto,1 pc,380,check,medium,one reading flagged as struck
+1,17,Clip tin Box,Clip Tin Dabba,1 pc,750,no,medium,
+1,18,9No Latha,Latha (9 No),9 no,300,no,medium,
+1,19,11No Latha,Latha (11 No),11 no,480,no,medium,
+1,20,12No Latha,Latha (12 No),12 no,750,no,medium,
+1,21,Hot Ring,Garam Ring,1 pc,200,no,medium,
+1,22,4pis W Jug,Paani Jug (4 pcs),4 pcs,2200,no,medium,
+1,23,1p HKA Priyapol,Unclear,1 pc,790,no,low,name unreadable
+1,24,1p Tankutti,Tanki,1 pc,1100,no,low,
+1,25,GHADA STAND,Ghada Stand,1 pc,760,no,medium,
+1,26,Souspan,Sauspan,1 pc,480,no,medium,
+1,27,Juse Chani,Juice Chhanni,1 pc,760,no,medium,
+1,28,3No Tray,Tray (3 No),3 no,480,no,medium,
+1,29,4No Tray,Tray (4 No),4 no,550,no,medium,
+1,30,Steel Trat,Steel Thaat,1 pc,750,check,medium,one reading flagged as struck
