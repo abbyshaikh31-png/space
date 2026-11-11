@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+"""Multi-engine search sweep -> research_log.json (atomic, JSON list)."""
+import json, os, random, re, time, urllib.parse
+from datetime import datetime, timezone
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
+LOG = os.path.join(ROOT, "research_log.json")
+
+UAS = [
+ "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+ "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+ "Mozilla/5.0 (X11; Linux x86_64; rv:126.0) Gecko/20100101 Firefox/126.0",
+ "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 Edg/123.0.0.0",
+ "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+]
+
+ENGINES = {
+ "bing":       "https://www.bing.com/search?q={q}&count=25&setlang=en",
+ "ddg":        "https://html.duckduckgo.com/html/?q={q}",
+ "lite":       "https://lite.duckduckgo.com/lite/?q={q}",
+ "mojeek":     "https://www.mojeek.com/search?q={q}",
+ "brave":      "https://search.brave.com/search?q={q}",
+ "startpage":  "https://www.startpage.com/sp/search?query={q}",
+ "searx_be":   "https://searx.be/search?q={q}",
+ "searx_priv": "https://searxng.site/search?q={q}",
+ "searx_tux":  "https://search.inetol.net/search?q={q}",
+ "marginalia": "https://search.marginalia.nu/search?query={q}",
+ "yandex":     "https://yandex.com/search/?text={q}",
+ "ecosia":     "https://www.ecosia.org/search?q={q}",
+ "google":     "https://www.google.com/search?q={q}&num=25",
+ "yep":        "https://yep.com/web?q={q}",
+ "rightdao":   "https://rightdao.com/search?q={q}",
+}
+
+BLOCK_HOSTS = ("bing.com","duckduckgo.com","mojeek.com","brave.com","startpage.com",
+ "searx","marginalia","yandex","ecosia.org","google.com","yep.com","rightdao.com",
+ "microsoft.com","msn.com","w3.org","gstatic.com")
+
+URL_RE = re.compile(r'href="(https?://[^"]+)"', re.I)
+UDDG_RE = re.compile(r'uddg=([^&"]+)')
+TITLE_RE = re.compile(r'<h2[^>]*>\s*<a[^>]*href="(https?://[^"]+)"[^>]*>(.*?)</a>', re.I | re.S)
+]<]minimax[>[
