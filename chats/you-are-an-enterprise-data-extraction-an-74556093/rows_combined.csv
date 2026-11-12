@@ -1,0 +1,61 @@
+Record_ID,Customer_Name,Contact_Info,Date_Standardized,Source_Channel,Primary_Category,Secondary_Category,Sentiment,Urgency_Level,Action_Required
+REC-1001,Mark Johnson,mark.j88@gmail.com; ORD-9921,2026-11-02,Chat,Logistics,Cancellation,Negative,High,Trace order and confirm shipment
+REC-1002,Kavita Sharma,k.sharma@techcorp.in; +91-9876543210,2026-11-03,Email,Bug,Billing,Negative,Critical,Escalate API outage and fix overcharge
+REC-1003,Unknown,+14158902311,2026-11-04,SMS,Cancellation,Account_Auth,Neutral,High,Confirm opt-out and deletion request
+REC-1004,Alex,@alex_dev_99,2026-11-04,Social,Praise,Feature_Request,Positive,Low,Thank user and log dark mode request
+REC-1005,Mrs. Gable,555-0192; 77410,2026-11-05,Phone,Logistics,Billing,Negative,High,Process full refund for damaged order
+REC-1006,Unknown,anon_user44@proton.me,2026-11-05,Form,Account_Auth,Billing,Negative,Critical,Reinstate suspended paid account urgently
+REC-1007,Diego M.,None,2026-11-06,Chat,General_Query,None,Neutral,Low,Send team invite instructions
+REC-1008,Rachel Zane,rachel.zane@pearson.com; INV-2026-88,2026-11-06,Email,Billing,General_Query,Neutral,High,Send W-9 and SOC2 documents
+REC-1009,Tina,@fitness_with_tina,2026-11-07,Social,Praise,Bug,Mixed,Low,Log iOS profile photo rotation bug
+REC-1010,Arthur Pendelton,+44 20 7946 0991,2026-11-07,Phone,Billing,None,Neutral,Medium,Investigate VIP50 discount code failure
+REC-1011,Nina K,@nina_k,2026-11-08,Social,Bug,None,Neutral,Medium,Reproduce dashboard filter freeze
+REC-1012,Robert Miller,bob.builder@construct.co; card ending 4412,2026-11-08,Email,Billing,None,Negative,Critical,Reverse duplicate charges immediately
+REC-1013,Sneha Rao,sneha.rao@blr.org,2026-11-08,Form,Feature_Request,Billing,Positive,Low,Log UPI and RuPay request
+REC-1014,Unknown,+1-202-555-0144; 55120,2026-11-09,SMS,Logistics,None,Negative,High,Open missing delivery investigation
+REC-1015,Unknown,None,2026-11-09,Chat,General_Query,None,Neutral,Low,Share free trial details
+REC-1016,Liam Vance,ceo@startupx.io; AC-909,2026-11-09,Email,Cancellation,Billing,Neutral,High,Cancel Pro plan before renewal
+REC-1017,Joe,@gamer_joe_22,2026-11-10,Social,Account_Auth,None,Negative,Critical,Fix 2FA SMS delivery and restore access
+REC-1018,David Wallace,dwallace@dunder.com,2026-11-10,Phone,General_Query,Billing,Neutral,Low,Route 250-seat quote to sales
+REC-1019,Hannah Abbott,None,2026-11-10,Form,Bug,None,Negative,Medium,Fix corrupted Excel export
+REC-1020,Priya Nair,priya.nair@kerala.in; 99812,2026-11-10,Email,Billing,Cancellation,Neutral,Medium,Switch plan to monthly and refund
+REC-1021,Tom,tommy_t@yahoo.com,2026-11-11,Chat,Bug,Billing,Negative,Medium,Escalate to human agent now
+REC-1022,Maria Gonzalez,None,2026-11-11,Social,Praise,Logistics,Positive,Low,Thank user for delivery feedback
+REC-1023,Unknown,unknown_sender99@mail.ru,Unknown,Email,Bug,Account_Auth,Negative,Medium,Fix broken password reset link
+REC-1024,Greg House,555-8821,2026-11-11,Phone,Billing,None,Neutral,Medium,Remove tax from tax-exempt invoice
+REC-1025,Chloe Price,chloe@arcadia.edu,2026-11-11,Chat,General_Query,None,Neutral,Low,Document API rate limit policy
+REC-1026,Unknown,+91-9988776655; 33210,2026-11-11,SMS,Logistics,Cancellation,Negative,High,Escalate courier cancellation to carrier
+REC-1027,Test User,test@test.com,2026-11-11,Form,General_Query,None,Neutral,Low,Close test submission without reply
+REC-1028,Sarah Connor,legal@enterprise.com; 77412,2026-11-12,Email,Account_Auth,Cancellation,Neutral,High,Process GDPR data deletion request
+REC-1029,Sanjay,@dev_sanjay,2026-11-12,Social,Bug,None,Negative,High,Patch webhook retry backoff logic
+REC-1030,Meera,meera1@gmail.com; meera.work@company.com,2026-11-12,Chat,Account_Auth,None,Neutral,Medium,Enable account email change option
+REC-1031,Ben Kenobi,ben@jedi.org,2026-11-12,Phone,Feature_Request,General_Query,Neutral,Low,Share Slack notification integration guide
+REC-1032,Peter Parker,peter.parker@dailybugle.com; 1Z999AA10123456784,2026-11-12,Email,Billing,Logistics,Negative,Medium,Process overdue refund for returned mic
+REC-1033,Sara,@sara_designs,2026-11-12,Social,Feature_Request,None,Neutral,Low,Log dark mode and font requests
+REC-1034,Carlos,carlos@mx.com,2026-11-12,Chat,Bug,None,Negative,High,Fix launch crash on Android 4.2.1
+REC-1035,Bruce Wayne,bruce@wayne.com,2026-11-12,Form,Billing,None,Neutral,Medium,Update expiring credit card on file
+REC-1036,Unknown,+13105550199,2026-11-12,SMS,Praise,None,Positive,Low,Send thank you to satisfied customer
+REC-1037,Diana Prince,diana.prince@themyscira.gov; 8812,2026-11-12,Email,Billing,Account_Auth,Negative,High,Restore paid tier and investigate downgrade
+REC-1038,Rohan,None,2026-11-12,Chat,General_Query,None,Neutral,Low,Show receipt export location in settings
+REC-1039,Unknown,+1-800-555-0199,2026-11-12,Phone,Logistics,Billing,Negative,High,Escalate supervisor callback for broken product
+REC-1040,Clark Kent,clark@planet.com,2026-11-12,Form,Bug,None,Negative,Medium,Fix hyphen handling in SKU search
+REC-1041,Natasha Romanoff,natasha.r@shield.org,2026-11-12,Email,Feature_Request,Account_Auth,Neutral,Medium,Evaluate RBAC request for enterprise
+REC-1042,Tony,@tony_s; 4410,2026-11-12,Social,Billing,Cancellation,Negative,Critical,Refund post-cancellation charge
+REC-1043,Wanda,wanda@westview.com,2026-11-12,Chat,General_Query,None,Neutral,Low,Confirm holiday support hours
+REC-1044,Unknown,+447700900077; 66512,2026-11-12,SMS,Logistics,None,Negative,High,Escalate collected parcel to courier
+REC-1045,Vision,vision@avengers.org,2026-11-12,Email,Account_Auth,Bug,Negative,Critical,Fix Okta SAML signature mismatch
+REC-1046,Steve Rogers,None,2026-11-12,Form,General_Query,Cancellation,Neutral,Medium,Guide project history export steps
+REC-1047,Bucky,None,2026-11-12,Chat,Bug,None,Negative,Medium,Investigate mobile battery drain issue
+REC-1048,Thor,thor@asgard.com; 11223,2026-11-12,Email,Logistics,None,Negative,High,Ship missing power cable replacement
+REC-1049,Loki Laufeyson,loki@jotunheim.io,2026-11-12,Phone,Billing,General_Query,Neutral,Low,Confirm wire transfer payment option
+REC-1050,Hulk,@hulk_smash,2026-11-12,Social,Bug,None,Negative,High,Investigate invoice page performance slowdown
+REC-1051,Clint Barton,clint@hawkeye.net,2026-11-12,Form,Praise,None,Positive,Low,Thank user for shortcut feedback
+REC-1052,Nick Fury,nick.fury@director.gov; 0001,2026-11-12,Email,Account_Auth,None,Negative,Critical,Lock admin account and audit access
+REC-1053,Pepper,pepper@stark.com,2026-11-12,Chat,Billing,None,Neutral,Medium,Add 50 enterprise licenses immediately
+REC-1054,Unknown,+12125550188; 90123,2026-11-12,SMS,Logistics,None,Negative,High,Exchange wrong item and correct order
+REC-1055,Scott Lang,scott@pym.com,2026-11-12,Form,General_Query,None,Neutral,Low,Share referral program details
+REC-1056,Hope Vandyne,hope.vandyne@pym.com,2026-11-12,Email,Bug,None,Neutral,Medium,Replace dead webhook documentation link
+REC-1057,Stephen Strange,stephen@sanctum.org,2026-11-12,Phone,Billing,None,Negative,High,Credit back duplicate storage charge
+REC-1058,T'Challa,@tchalla,2026-11-12,Social,Praise,None,Positive,Low,Forward praise to support lead
+REC-1059,Carol,carol@starforce.com,2026-11-12,Chat,Bug,None,Negative,Medium,Fix large video upload failure
+REC-1060,Sam Wilson,sam.wilson@falcon.org,2026-11-12,Email,Cancellation,None,Neutral,Medium,Fix newsletter unsubscribe and remove

@@ -1,0 +1,22 @@
+REC-1040|Clark Kent|clark@planet.com|2026-11-12|Form|Bug|None|Negative|Medium|Fix hyphen handling in SKU search
+REC-1041|Natasha Romanoff|natasha.r@shield.org|2026-11-12|Email|Feature_Request|Account_Auth|Neutral|Medium|Evaluate RBAC request for enterprise
+REC-1042|Tony|@tony_s; 4410|2026-11-12|Social|Billing|Cancellation|Negative|Critical|Refund post-cancellation charge
+REC-1043|Wanda|wanda@westview.com|2026-11-12|Chat|General_Query|None|Neutral|Low|Confirm holiday support hours
+REC-1044|Unknown|+447700900077; 66512|2026-11-12|SMS|Logistics|None|Negative|High|Escalate collected parcel to courier
+REC-1045|Vision|vision@avengers.org|2026-11-12|Email|Account_Auth|Bug|Negative|Critical|Fix Okta SAML signature mismatch
+REC-1046|Steve Rogers|None|2026-11-12|Form|General_Query|Cancellation|Neutral|Medium|Guide project history export steps
+REC-1047|Bucky|None|2026-11-12|Chat|Bug|None|Negative|Medium|Investigate mobile battery drain issue
+REC-1048|Thor|thor@asgard.com; 11223|2026-11-12|Email|Logistics|None|Negative|High|Ship missing power cable replacement
+REC-1049|Loki Laufeyson|loki@jotunheim.io|2026-11-12|Phone|Billing|General_Query|Neutral|Low|Confirm wire transfer payment option
+REC-1050|Hulk|@hulk_smash|2026-11-12|Social|Bug|None|Negative|High|Investigate invoice page performance slowdown
+REC-1051|Clint Barton|clint@hawkeye.net|2026-11-12|Form|Praise|None|Positive|Low|Thank user for shortcut feedback
+REC-1052|Nick Fury|nick.fury@director.gov; 0001|2026-11-12|Email|Account_Auth|None|Negative|Critical|Lock admin account and audit access
+REC-1053|Pepper|pepper@stark.com|2026-11-12|Chat|Billing|None|Neutral|Medium|Add 50 enterprise licenses immediately
+REC-1054|Unknown|+12125550188; 90123|2026-11-12|SMS|Logistics|None|Negative|High|Exchange wrong item and correct order
+REC-1055|Scott Lang|scott@pym.com|2026-11-12|Form|General_Query|None|Neutral|Low|Share referral program details
+REC-1056|Hope Vandyne|hope.vandyne@pym.com|2026-11-12|Email|Bug|None|Neutral|Medium|Replace dead webhook documentation link
+REC-1057|Stephen Strange|stephen@sanctum.org|2026-11-12|Phone|Billing|None|Negative|High|Credit back duplicate storage charge
+REC-1058|T'Challa|@tchalla|2026-11-12|Social|Praise|None|Positive|Low|Forward praise to support lead
+REC-1059|Carol|carol@starforce.com|2026-11-12|Chat|Bug|None|Negative|Medium|Fix large video upload failure
+REC-1060|Sam Wilson|sam.wilson@falcon.org|2026-11-12|Email|Cancellation|None|Neutral|Medium|Fix newsletter unsubscribe and remove
+]<]minimax[>[

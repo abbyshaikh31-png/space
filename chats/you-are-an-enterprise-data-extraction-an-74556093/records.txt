@@ -1,0 +1,60 @@
+Mark Johnson|mark.j88@gmail.com; ORD-9921|2026-11-02|Chat|Logistics|None|Negative|Medium|Trace order and offer cancellation
+Kavita Sharma|k.sharma@techcorp.in; +91-9876543210|2026-11-03|Email|Bug|Billing|Negative|Critical|Escalate webhook outage fix billing overcharge
+Unknown|+14158902311|2026-11-04|SMS|Account_Auth|Cancellation|Negative|High|Confirm STOP and account deletion
+Alex @alex_dev_99|@alex_dev_99|2026-11-04|Social|Praise|Feature_Request|Positive|Low|Thank user log dark mode request
+Mrs. Gable|555-0192; Order 77410|2026-11-05|Phone|Logistics|Billing|Negative|High|Process full refund for damaged order
+Unknown|anon_user44@proton.me|2026-11-05|Form|Account_Auth|None|Negative|Critical|Unlock suspended paid account urgently
+Diego M.|None|2026-11-06|Chat|General_Query|None|Neutral|Low|Send team member invite guide
+Rachel Zane|rachel.zane@pearson.com; INV-2026-88|2026-11-06|Email|Billing|None|Neutral|Medium|Send W-9 and SOC2 documents
+Tina @fitness_with_tina|@fitness_with_tina|2026-11-07|Social|Praise|Bug|Mixed|Low|Thank user file iOS photo rotation bug
+Arthur Pendelton|+44 20 7946 0991|2026-11-07|Phone|Billing|None|Negative|Medium|Callback on failed VIP50 code
+Nina K @nina_k|@nina_k|2026-11-08|Chat|Bug|None|Negative|Medium|Reproduce dashboard freeze on 90-day filter
+Robert Miller|bob.builder@construct.co; card ending 4412|2026-11-08|Email|Billing|None|Negative|Critical|Reverse duplicate charges prevent chargeback
+Sneha Rao|sneha.rao@blr.org|2026-11-08|Form|Feature_Request|Billing|Neutral|Low|Log UPI and RuPay payment request
+Unknown|+1-202-555-0144; Order 55120|2026-11-09|SMS|Logistics|None|Negative|High|Open carrier investigation for missing parcel
+Visitor8821|None|2026-11-09|Chat|General_Query|None|Neutral|Low|Share free trial and pricing info
+Liam Vance|ceo@startupx.io; AC-909|2026-11-09|Email|Cancellation|Billing|Mixed|High|Cancel Pro plan before 15th billing
+Gamer Joe @gamer_joe_22|@gamer_joe_22|2026-11-10|Social|Account_Auth|None|Negative|Critical|Investigate 2FA SMS delivery failure
+David Wallace|dwallace@dunder.com|2026-11-10|Phone|General_Query|None|Neutral|Low|Route 250-seat quote to sales
+Hannah Abbott|None|2026-11-10|Form|Bug|None|Negative|Medium|Reproduce corrupted Excel export on macOS
+Priya Nair|priya.nair@kerala.in; Order 99812|2026-11-10|Email|Billing|None|Neutral|Medium|Switch to monthly refund difference
+Tom|tommy_t@yahoo.com|2026-11-11|Chat|Billing|None|Negative|High|Escalate to human honor expired promo
+Maria Gonzalez|Facebook Messenger|2026-11-11|Social|Praise|None|Positive|Low|Thank customer for delivery feedback
+Unknown|unknown_sender99@mail.ru|Unknown|Email|Account_Auth|Bug|Negative|High|Fix broken password reset link
+Greg House|555-8821|2026-11-11|Phone|Billing|None|Negative|High|Apply tax-exempt certificate to invoices
+Chloe Price|chloe@arcadia.edu|2026-11-11|Chat|General_Query|Bug|Neutral|Low|Send API rate limit documentation
+Unknown|+91-9988776655; Order 33210|2026-11-11|SMS|Logistics|Billing|Negative|High|Explain courier cancellation refund prepaid order
+Test User|test@test.com|2026-11-11|Form|General_Query|None|Neutral|Low|Verify and purge test submission
+Sarah Connor|legal@enterprise.com; User ID 77412|2026-11-12|Email|General_Query|None|Neutral|Critical|Process GDPR erasure request promptly
+Sanjay @dev_sanjay|@dev_sanjay|2026-11-12|Social|Bug|None|Negative|High|Stop webhook retry storm investigate
+Meera|meera1@gmail.com|2026-11-12|Chat|Account_Auth|Bug|Negative|Medium|Enable email change verify identity
+Ben Kenobi|ben@jedi.org|2026-11-12|Phone|General_Query|Feature_Request|Neutral|Low|Send Slack integration setup guide
+Peter Parker|peter.parker@dailybugle.com; 1Z999AA10123456784|2026-11-12|Email|Billing|Logistics|Negative|Medium|Trace return issue $120 refund
+Sara @sara_designs|@sara_designs|2026-11-12|Social|Feature_Request|None|Neutral|Low|Log dark mode and custom fonts
+Carlos|carlos@mx.com|2026-11-12|Chat|Bug|None|Negative|High|Escalate Android v4.2.1 crash
+Bruce Wayne|bruce@wayne.com|2026-11-12|Form|Billing|None|Neutral|High|Update expiring card prevent cluster pause
+Unknown|+13105550199|2026-11-12|SMS|Praise|None|Positive|Low|Thank customer and close ticket
+Diana Prince|diana.prince@themyscira.gov; Acct 8812|2026-11-12|Email|Billing|Account_Auth|Negative|High|Restore paid tier investigate payment failure
+Rohan|None|2026-11-12|Chat|General_Query|None|Neutral|Low|Send receipt download instructions
+Unknown|+1-800-555-0199|2026-11-12|Phone|Bug|Cancellation|Negative|High|Arrange supervisor callback offer refund
+Clark Kent|clark@planet.com|2026-11-12|Form|Bug|None|Negative|Medium|Fix SKU hyphen search filter
+Natasha R|natasha.r@shield.org|2026-11-12|Email|Feature_Request|Account_Auth|Neutral|Medium|Log RBAC request for security review
+Tony S @tony_s|@tony_s; Ticket 4410|2026-11-12|Social|Billing|Cancellation|Negative|High|Refund charge and reopen ticket 4410
+Wanda|wanda@westview.com|2026-11-12|Chat|General_Query|None|Neutral|Low|Share holiday support hours
+Unknown|+447700900077; Order 66512|2026-11-12|SMS|Logistics|None|Negative|High|Replace parcel lost in recycling bin
+Vision|vision@avengers.org|2026-11-12|Email|Account_Auth|Bug|Negative|Critical|Escalate Okta SAML signature mismatch
+Steve Rogers|None|2026-11-12|Form|Cancellation|General_Query|Neutral|Medium|Send project history export guide
+Bucky|None|2026-11-12|Chat|Bug|None|Negative|Medium|Log battery drain for mobile team
+Thor|thor@asgard.com; Order 11223|2026-11-12|Email|Logistics|None|Negative|Medium|Ship missing power cable replacement
+Loki Laufeyson|loki@jotunheim.io|2026-11-12|Phone|Billing|None|Neutral|Low|Send wire transfer payment instructions
+Hulk @hulk_smash|@hulk_smash|2026-11-12|Social|Bug|None|Negative|High|Check site latency update user
+Clint Barton|clint@hawkeye.net|2026-11-12|Form|Praise|None|Positive|Low|Thank user for shortcuts feedback
+Nick Fury|nick.fury@director.gov; Account ID 0001|2026-11-12|Email|Account_Auth|None|Negative|Critical|Lock admin account force password reset
+Pepper|pepper@stark.com|2026-11-12|Chat|Billing|None|Neutral|High|Add 50 licenses to enterprise agreement
+Unknown|+12125550188; Order 90123|2026-11-12|SMS|Logistics|None|Negative|Medium|Ship correct hoodie arrange return
+Scott Lang|scott@pym.com|2026-11-12|Form|General_Query|Feature_Request|Neutral|Low|Send affiliate program details
+Hope van Dyne|hope.vandyne@pym.com|2026-11-12|Email|Bug|None|Neutral|Medium|Fix 404 webhook documentation link
+Stephen Strange|stephen@sanctum.org|2026-11-12|Phone|Billing|None|Negative|High|Refund duplicate $20 storage charge
+TChalla @tchalla|@tchalla|2026-11-12|Social|Praise|None|Positive|Low|Share praise with agent Sarah
+Carol|carol@starforce.com|2026-11-12|Chat|Bug|None|Negative|High|Investigate uploads failing over 500MB
+Sam Wilson|sam.wilson@falcon.org|2026-11-12|Email|General_Query|None|Neutral|Low|Manually unsubscribe from marketing list

@@ -1,0 +1,21 @@
+REC-1021|Tom|tommy_t@yahoo.com|2026-11-11|Chat|Bug|Billing|Negative|Medium|Escalate to human agent now
+REC-1022|Maria Gonzalez|None|2026-11-11|Social|Praise|Logistics|Positive|Low|Thank user for delivery feedback
+REC-1023|Unknown|unknown_sender99@mail.ru|Unknown|Email|Bug|Account_Auth|Negative|Medium|Fix broken password reset link
+REC-1024|Greg House|555-8821|2026-11-11|Phone|Billing|None|Neutral|Medium|Remove tax from tax-exempt invoice
+REC-1025|Chloe Price|chloe@arcadia.edu|2026-11-11|Chat|General_Query|None|Neutral|Low|Document API rate limit policy
+REC-1026|Unknown|+91-9988776655; 33210|2026-11-11|SMS|Logistics|Cancellation|Negative|High|Escalate courier cancellation to carrier
+REC-1027|Test User|test@test.com|2026-11-11|Form|General_Query|None|Neutral|Low|Close test submission without reply
+REC-1028|Sarah Connor|legal@enterprise.com; 77412|2026-11-12|Email|Account_Auth|Cancellation|Neutral|High|Process GDPR data deletion request
+REC-1029|Sanjay|@dev_sanjay|2026-11-12|Social|Bug|None|Negative|High|Patch webhook retry backoff logic
+REC-1030|Meera|meera1@gmail.com; meera.work@company.com|2026-11-12|Chat|Account_Auth|None|Neutral|Medium|Enable account email change option
+REC-1031|Ben Kenobi|ben@jedi.org|2026-11-12|Phone|Feature_Request|General_Query|Neutral|Low|Share Slack notification integration guide
+REC-1032|Peter Parker|peter.parker@dailybugle.com; 1Z999AA10123456784|2026-11-12|Email|Billing|Logistics|Negative|Medium|Process overdue refund for returned mic
+REC-1033|Sara|@sara_designs|2026-11-12|Social|Feature_Request|None|Neutral|Low|Log dark mode and font requests
+REC-1034|Carlos|carlos@mx.com|2026-11-12|Chat|Bug|None|Negative|High|Fix launch crash on Android 4.2.1
+REC-1035|Bruce Wayne|bruce@wayne.com|2026-11-12|Form|Billing|None|Neutral|Medium|Update expiring credit card on file
+REC-1036|Unknown|+13105550199|2026-11-12|SMS|Praise|None|Positive|Low|Send thank you to satisfied customer
+REC-1037|Diana Prince|diana.prince@themyscira.gov; 8812|2026-11-12|Email|Billing|Account_Auth|Negative|High|Restore paid tier and investigate downgrade
+REC-1038|Rohan|None|2026-11-12|Chat|General_Query|None|Neutral|Low|Show receipt export location in settings
+REC-1039|Unknown|+1-800-555-0199|2026-11-12|Phone|Logistics|Billing|Negative|High|Escalate supervisor callback for broken product
+REC-1030|REMOVE|None|None|None|None|None|None|None|None
+]<]minimax[>[
