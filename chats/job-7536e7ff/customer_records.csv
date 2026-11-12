@@ -1,0 +1,13 @@
+Record_ID,Customer_Name,Contact_Info,Date_Standardized,Source_Channel,Primary_Category,Secondary_Category,Sentiment,Urgency_Level,Action_Required
+REC-1001,Mark Johnson,mark.j88@gmail.com; ORD-9921,2026-11-02,Chat,Logistics,Cancellation,Negative,Medium,Trace order and cancel if undelivered
+REC-1002,Kavita Sharma,k.sharma@techcorp.in; +91-9876543210,2026-11-03,Email,Bug,Billing,Negative,Critical,Escalate API outage and fix overcharge
+REC-1003,Unknown,+14158902311,2026-11-04,SMS,Cancellation,None,Neutral,Medium,Verify opt-out and process deletion request
+REC-1004,Unknown,@alex_dev_99,2026-11-04,Social,Praise,Feature_Request,Positive,Low,"Thank user, log dark mode request"
+REC-1005,Mrs. Gable,555-0192; 77410,2026-11-05,Phone,Logistics,Bug,Negative,High,Refund order 77410 for water damage
+REC-1006,Unknown,anon_user44@proton.me,2026-11-05,Form,Account_Auth,Billing,Negative,Critical,Restore suspended paid account access
+REC-1007,Diego M.,None,2026-11-06,Chat,General_Query,Feature_Request,Neutral,Low,Send guide on adding team members
+REC-1008,Rachel Zane,rachel.zane@pearson.com; INV-2026-88,2026-11-06,Email,Billing,General_Query,Neutral,Medium,Send W-9 and SOC2 compliance docs
+REC-1009,Unknown,@fitness_with_tina,2026-11-07,Social,Bug,Praise,Mixed,Low,"Acknowledge feedback, log image flip bug"
+REC-1010,Arthur Pendelton,+44 20 7946 0991,2026-11-07,Phone,Billing,None,Neutral,Medium,Call back to restore VIP50 discount
+REC-1011,Unknown,@nina_k,2026-11-08,Chat,Bug,None,Negative,Medium,Investigate dashboard freeze on date filter
+REC-1012,Robert,bob.builder@construct.co; card ending 4412,2026-11-08,Email,Billing,None,Negative,Critical,"Refund duplicate charges, escalate legal risk"
