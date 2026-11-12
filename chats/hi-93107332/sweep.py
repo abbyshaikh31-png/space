@@ -1,60 +1,80 @@
-import json, re, ssl, sys, time, urllib.parse, urllib.request, hashlib, os, threading
-from concurrent.futures import ThreadPoolExecutor
+import json, os, time, random, urllib.parse, sys
+import requests
 
-UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
-CTX = ssl.create_default_context()
-CTX.check_hostname = False
-CTX.verify_mode = ssl.CERT_NONE
-LOCK = threading.Lock()
-LOG = "research_log.jsonl"
-os.makedirs("sources", exist_ok=True)
+HERE = os.path.dirname(os.path.abspath(__file__))
+LOG = os.path.join(HERE, "research_log.json")
 
-BLACK = ("startpage.com","bing.com","microsoft.com","searx","duckduckgo","mojeek","marginalia",
-         "ecosia","google.com/search","youtube.com/redirect","go.microsoft")
+UAS = [
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0 Safari/537.36",
+]
 
-def fetch(url, timeout=20):
-    req = urllib.request.Request(url, headers={"User-Agent": UA,
-          "Accept-Language": "en-US,en;q=0.9", "Accept": "text/html,*/*"})
-    with urllib.request.urlopen(req, timeout=timeout, context=CTX) as r:
-        return r.status, r.read().decode("utf-8", "ignore")
+def load_log():
+    if os.path.exists(LOG):
+        try:
+            with open(LOG) as f:
+                d = json.load(f)
+            return d if isinstance(d, list) else d.get("results", [])
+        except Exception:
+            return []
+    return []
 
-def clean(s):
-    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", s)).strip()
+def save_log(entries):
+    tmp = LOG + ".tmp"
+    with open(tmp, "w") as f:
+        json.dump(entries, f, indent=1)
+    os.replace(tmp, LOG)
 
-def bing(q):
-    st, html = fetch("https://www.bing.com/search?q=" + urllib.parse.quote_plus(q) + "&count=25&setlang=en")
-    out = []
-    for m in re.finditer(r'<h2><a[^>]+href="(https?://[^"]+)"[^>]*>(.*?)</a></h2>', html, re.S):
-        out.append((clean(m.group(2)), m.group(1)))
-    return st, out
+def bing(q, ua):
+    url = "https://www.bing.com/search?q=" + urllib.parse.quote(q) + "&count=20"
+    r = requests.get(url, headers={"User-Agent": ua, "Accept-Language": "en-US,en;q=0.9"}, timeout=20)
+    return r.status_code, r.text
 
-def startpage(q):
-    st, html = fetch("https://www.startpage.com/sp/search?query=" + urllib.parse.quote_plus(q))
-    out = []
-    for m in re.finditer(r'<a[^>]+class="[^"]*result-link[^"]*"[^>]+href="(https?://[^"]+)"[^>]*>(.*?)</a>', html, re.S):
-        out.append((clean(m.group(2)), m.group(1)))
-    if not out:
-        for m in re.finditer(r'<a[^>]+href="(https?://[^"]+)"[^>]*>(.*?)</a>', html, re.S):
-            u = m.group(1)
-            if not any(b in u for b in BLACK):
-                out.append((clean(m.group(2)), u))
-    return st, out
+def ddg(q, ua):
+    url = "https://html.duckduckgo.com/html/?q=" + urllib.parse.quote(q)
+    r = requests.post(url, data={"q": q}, headers={"User-Agent": ua}, timeout=20)
+    return r.status_code, r.text
 
-def norm(u):
-    p = urllib.parse.urlsplit(u)
-    q = [(k, v) for k, v in urllib.parse.parse_qsl(p.query) if not k.lower().startswith("utm") and k.lower() not in ("ref","source","fbclid")]
-    path = p.path.rstrip("/") or "/"
-    return urllib.parse.urlunsplit((p.scheme.lower(), p.netloc.lower(), path, urllib.parse.urlencode(q), ""))
+def mojeek(q, ua):
+    url = "https://www.mojeek.com/search?q=" + urllib.parse.quote(q)
+    r = requests.get(url, headers={"User-Agent": ua}, timeout=20)
+    return r.status_code, r.text
 
-BASES = ["gemini 4 carbon", "gemini-4-carbon", "Gemini 4 Carbon model", "Gemini 4 Carbon API",
-         "Gemini 4 Carbon Google", "Gemini 4 Carbon developer", "Gemini 4 Carbon pricing",
-         "Gemini 4 Carbon free", "Gemini 4 Carbon vs Claude", "Gemini 4 Carbon Argon"]
-MODS = ["pricing per million tokens", "free tier", "free access", "AI Studio", "OpenRouter",
-        "Puter.js", "rate limits", "release date", "benchmark", "documentation"]
-QUERIES = []
-for b in BASES:
-    for m in MODS:
-        q = (b + " " + m).replace('"', "").replace("'", "")
-        if q not in QUERIES:
-            QUERIES.append(q)
-print("queries:", len(QUERIES), flush=True)
+ENGINES = {"bing": bing, "ddg": ddg, "mojeek": mojeek}
+
+def count_hits(html):
+    return html.count("<a ") // 3
+
+def run(queries, start_id=1):
+    log = load_log()
+    nid = len(log) + 1
+    for q in queries:
+        got = False
+        for name in ["bing", "ddg", "mojeek"]:
+            ua = random.choice(UAS)
+            ts = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+            try:
+                status, html = ENGINES[name](q, ua)
+                n = count_hits(html) if status == 200 else 0
+                err = ""
+            except Exception as e:
+                status, n, err = 0, 0, type(e).__name__ + ": " + str(e)[:120]
+            log.append({"id": nid, "query": q, "engine": name, "timestamp": ts,
+                        "http_status": status, "n_results": n, "errors": err})
+            save_log(log)
+            nid += 1
+            if status == 200 and n > 0:
+                print(str(nid-1) + " " + name + " OK " + q[:60])
+                got = True
+                break
+            time.sleep(0.6)
+        if not got:
+            print(str(nid-1) + " ALL-FAIL " + q[:60])
+    save_log(log)
+    print("TOTAL_LOGGED=" + str(len(log)))
+    return len(log)
+
+if __name__ == "__main__":
+    qs = json.load(open(os.path.join(HERE, "queries.json")))
+    run(qs)
